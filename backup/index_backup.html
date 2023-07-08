@@ -1,0 +1,39 @@
+---
+layout: default
+title: Bradley J Kavanagh
+---
+
+<div class="home">
+
+
+   <img src="/assets/Me.jpg" height="250px" style="float: right; padding-right: 10px;">
+
+
+		<div class="blurb" >
+			<h1>Bradley J Kavanagh</h1>
+			<p>I'm best known as the horrible cop from <em>A Touch of Evil</em>. Don't trust me. <a href="/about">Read more about my life...</a></p>
+		</div> 
+		
+		<p markdown = "1">
+		I am currently a post-doc at the [LPTHE](http://www.lpthe.jussieu.fr) in Paris, holding a *distinguished* ERC NewDARK Fellowship with [Dr. Marco Cirelli](http://www.marcocirelli.net).
+
+		I completed my PhD in 2014 at the University of Nottingham, supervised by [Dr. Anne Green](http://anne-green.net/physics/Home.html). My thesis was entitled "*Confronting astrophysical uncertainties in the direct detection of dark matter*" and is available from the [Nottingham eTheses Repository](http://eprints.nottingham.ac.uk/14547/).
+		</p>
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+ <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>
