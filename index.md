@@ -9,7 +9,8 @@ weight: 1
 
 <img src="/assets/Me.jpg" height="250px" border="1px" style="float: right; margin-left: 15px;">
 
-I am a particle astrophysicist, working as a post-doc at the [IFCA](https://ifca.unican.es/en-us#) in Santander in Northern Spain. I was a post-doc at the [GRAPPA](https://iop.fnwi.uva.nl/grappa/) institute at the University of Amsterdam from September 2017 - February 2020. Before this, I was a post-doc at the [LPTHE](http://www.lpthe.jussieu.fr) in Paris, holding a '*distinguished*' ERC NewDARK Fellowship with [Dr. Marco Cirelli](http://www.marcocirelli.net).
+I am currently a PhD student at the [RPI](https://www.rpi.edu/) in Troy, New York, USA, holding a graduate research assistantship with [Dr. Victor Robles Sanchez](https://sites.google.com/yale.edu/vrobles/home). Before this, I completed my Master in Physics in 2022 at the University of Texas Rio Grande Valley, supervised by [Dr. Soumya D Mohanty](https://scholar.google.com/citations?user=C2xWWFsAAAAJ&hl=en). My thesis was entitled "Glitch Estimation and Removal Using Adaptive Spline Fitting and Wavelet Shrinkage on the Gravitational Wave Data" and is available from the [ProQuest eTheses Repository](https://www.proquest.com/docview/2801919094?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses).
+
 
 My main research interest is [Dark Matter](https://en.wikipedia.org/wiki/Dark_matter) and trying to find out what it is. On this website, you'll find information and useful links associated with my research.
  
