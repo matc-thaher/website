@@ -1,6 +1,6 @@
 layout: default
 title: Home
-permalink: /index_backup.html
+permalink: https://github.com/matc-thaher/thaher.github.io/blob/c8fbc2ea57f5a487fb656da6c92ebae67db0f787/backup/index_backup.html
 weight: 1
 ---
 
