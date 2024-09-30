@@ -1,4 +1,4 @@
-layout: default
+layout: default.html
 title: Home
 permalink: /index_backup.html
 weight: 1
