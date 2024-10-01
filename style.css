@@ -77,14 +77,6 @@ h2 {
     /* Additional styles for mobile if needed */
 }
 
-/* Make all images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 
 /* Research Section Styling */
 .research-section {
