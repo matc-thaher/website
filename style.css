@@ -58,6 +58,15 @@ h2 {
     margin-top: 20px;
 }
 
+/* Profile Image Styling */
+.profile-img {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
 /* Research Section Styling */
 .research-section {
     margin-bottom: 2rem;
