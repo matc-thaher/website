@@ -113,8 +113,8 @@ h2 {
 
 .research-section img {
     display: block; /* Ensures the image takes up the full width available */
-    max-width: 80%; /* Image scales to fit its container */
-    max-height: 400px; /* Limits the height to avoid overly large images */
+    max-width: 50%; /* Image scales to fit its container */
+    max-height: 100px; /* Limits the height to avoid overly large images */
     margin-bottom: 1.5rem; /* Increased space below the image */
     border-radius: 5px;
     object-fit: cover; /* Ensures the image covers the designated area without distortion */
