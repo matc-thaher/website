@@ -70,7 +70,7 @@ h2 {
 
 
 /* Research Section Styling */
-.research-section {
+/* .research-section {
     margin-bottom: 2rem;
     padding: 1rem;
     background-color: #fff;
@@ -93,7 +93,38 @@ h2 {
 
 .research-section p {
     line-height: 1.6;
+} */
+
+.research-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem; /* Increased padding for more spacing */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly more shadow for emphasis */
 }
+
+.research-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem; /* Added space below the heading */
+    color: #004085;
+    font-size: 1.6em; /* Slightly larger font for better readability */
+}
+
+.research-section img {
+    display: block; /* Ensures the image takes up the full width available */
+    max-width: 100%; /* Image scales to fit its container */
+    max-height: 400px; /* Limits the height to avoid overly large images */
+    margin-bottom: 1.5rem; /* Increased space below the image */
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image covers the designated area without distortion */
+}
+
+.research-section p {
+    line-height: 1.8; /* Increased line spacing for readability */
+    margin-bottom: 1rem; /* Space after paragraphs */
+}
+
 
 /* Footer Styling */
 footer {
