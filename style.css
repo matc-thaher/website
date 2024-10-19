@@ -65,7 +65,9 @@ h2 {
     width: 200px;
     border-radius: 50%;
     border: 3px solid #ddd;
+    display: block; /* Make sure the image is not hidden */
 }
+
 
 /* Research Section Styling */
 .research-section {
