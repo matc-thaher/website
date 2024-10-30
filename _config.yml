@@ -13,6 +13,7 @@ permalink: pretty  # Generates clean URLs without .html extension
 plugins:
   - jekyll-sitemap  # Automatically generate a sitemap for SEO
   - jekyll-seo-tag  # Adds SEO tags for social sharing, search engines, etc.
+  - jekyll-feed
 
 # Markdown and syntax highlighting
 markdown: kramdown
