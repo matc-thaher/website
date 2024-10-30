@@ -2,7 +2,7 @@
 title: "Mohammad Abu Thaher Chowdhury"
 description: "PhD student at RPI, focusing on Dark Matter research. Explore my research, publications, and more."
 url: "https://matc-thaher.github.io/website"  # Replace with your GitHub Pages URL
-baseurl: ""  # Leave empty if your website is hosted at the root of the domain
+baseurl: "/website"  # Leave empty if your website is hosted at the root of the domain
 author: "Mohammad Abu Thaher Chowdhury"
 
 # SEO settings
