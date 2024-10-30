@@ -1,7 +1,7 @@
 # Website settings
 title: "Mohammad Abu Thaher Chowdhury"
 description: "PhD student at RPI, focusing on Dark Matter research. Explore my research, publications, and more."
-url: "https://github.com/matc-thaher/thaher.github.io"  # Replace with your GitHub Pages URL
+url: "https://matc-thaher.github.io/thaher.github.io/"  # Replace with your GitHub Pages URL
 baseurl: ""  # Leave empty if your website is hosted at the root of the domain
 author: "Mohammad Abu Thaher Chowdhury"
 
