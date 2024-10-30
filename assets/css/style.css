@@ -43,6 +43,27 @@ header nav a:hover {
     color: #005fa3;
 }
 
+/* For horizontal navigation */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+nav ul li {
+    margin-right: 15px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
 /* Links and Buttons */
 a {
     color: #007acc;
