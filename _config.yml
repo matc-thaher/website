@@ -1,0 +1,67 @@
+# Website settings
+title: "Mohammad Abu Thaher Chowdhury"
+description: "PhD student at RPI, focusing on Dark Matter research. Explore my research, publications, and more."
+url: "https://your-username.github.io/your-repository"  # Replace with your GitHub Pages URL
+baseurl: ""  # Leave empty if your website is hosted at the root of the domain
+author: "Mohammad Abu Thaher Chowdhury"
+
+# SEO settings
+google_analytics: "UA-XXXXXXXX-X"  # Add your Google Analytics tracking ID here (if you have one)
+permalink: pretty  # Generates clean URLs without .html extension
+
+# Sitemaps and SEO plugins
+plugins:
+  - jekyll-sitemap  # Automatically generate a sitemap for SEO
+  - jekyll-seo-tag  # Adds SEO tags for social sharing, search engines, etc.
+
+# Markdown and syntax highlighting
+markdown: kramdown
+highlighter: rouge
+
+# Theme settings (if using a Jekyll theme)
+theme: minima  # You can change this to another Jekyll theme if you prefer
+
+# Directory settings
+sass:
+  style: compressed  # Minify CSS for better performance
+
+# Exclude certain files and folders from the site generation
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# Social and profiles (you can add these to the footer or in your about page)
+social_links:
+  google_scholar: "https://scholar.google.com/citations?user=your-google-scholar-id"
+  orcid: "https://orcid.org/your-orcid-id"
+  researchgate: "https://www.researchgate.net/profile/your-profile-id"
+  github: "https://github.com/your-username"
+
+# Collections (if you have separate sections for publications, research, etc.)
+collections:
+  research:
+    output: true
+  publications:
+    output: true
+  talks:
+    output: true
+
+# Default settings for each page
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Mohammad Abu Thaher Chowdhury"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Mohammad Abu Thaher Chowdhury"
+
+# Build settings
+future: true
