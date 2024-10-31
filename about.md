@@ -7,7 +7,7 @@ permalink: /about/
 # Mohammad Abu Thaher Chowdhury
 
 # <img src="./assets/Me.jpg" height="250px" style="float: right; margin-left: 15px; border: 1px solid #ddd;">
-<img src="assets/Me.jpg" alt="My Photo" class="img">
+<img src="./assets/Me.jpg" alt="My Photo" class="img">
 
 I am currently a PhD student at [RPI](https://www.rpi.edu/) in Troy, New York, USA, working as a graduate research assistant under the guidance of [Dr. Victor Robles Sanchez](https://sites.google.com/yale.edu/vrobles/home). My primary focus is on understanding [Dark Matter](https://en.wikipedia.org/wiki/Dark_matter) and exploring its properties through theoretical research.
 
