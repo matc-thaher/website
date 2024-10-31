@@ -20,7 +20,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Theme settings (if using a Jekyll theme)
-theme: minimal-mistakes-jekyll  # You can change this to another Jekyll theme if you prefer
+theme: minimal-mistakes  # You can change this to another Jekyll theme if you prefer
 
 # Directory settings
 sass:
