@@ -32,6 +32,17 @@ header h1 {
     color: #333;
 }
 
+/* header nav a {
+    text-decoration: none;
+    color: #007acc;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #005fa3;
+} */
+
 
 /* For horizontal navigation */
 nav ul {
