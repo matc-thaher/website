@@ -20,15 +20,15 @@ body {
 
 /* Header */
 header {
+    background-color: #004085;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    margin-bottom: 30px;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
 }
 
 header h1 {
-    font-size: 2em;
+    margin: 0;
+    font-size: 2.5em;
     color: #333;
 }
 
