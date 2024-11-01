@@ -8,16 +8,12 @@ permalink: /talks/
 
 I have delivered talks and presentations at various conferences and seminars. Here are some recent ones:
 
-1. **Title of Talk 1**  
-   *Conference Name, Location, Year*  
-   [View slides](https://example.com/slides/talk1)
+1. **Application of Adaptive Spline Regression and wavelet based Method on Glitches in Gravitational Wave data**  
+   *American Physical Society Joint Fall 2022, Rice University, 2022*  
+   [View slides](https://meetings.aps.org/Meeting/TSF22/Session/F05.5)
 
-2. **Title of Talk 2**  
-   *Conference Name, Location, Year*  
-   [View slides](https://example.com/slides/talk2)
-
-3. **Title of Talk 3**  
-   *Conference Name, Location, Year*  
-   [View slides](https://example.com/slides/talk3)
+2. **Data-driven Data-fitting: Adaptive Spline Fitting and its Applications**  
+   *TACCSTER 2021, University of Texas Austin, 2021*  
+   [View poster](https://hdl.handle.net/2152/89587)
 
 Visit my [Contact](/contact/) page if you're interested in inviting me for talks or collaborations.
