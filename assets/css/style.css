@@ -91,7 +91,7 @@ img {
     margin-left: 15px;
     max-width: 50%;
     max-height: 100px;
-    border-radius: 50%;
+    border-radius: 5px;
     border: 3px solid #ddd;
     display: block; /* Make sure the image is not hidden */
 }
