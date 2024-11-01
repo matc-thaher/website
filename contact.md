@@ -8,7 +8,7 @@ permalink: /contact/
 
 If you’re interested in collaborating or have any questions regarding my research, please feel free to reach out.
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Email**: [chowdm4@rpi.edu](mailto:chowdm4@rpi.edu)
 - **Location**: Rensselaer Polytechnic Institute, Troy, NY, USA
 
 You can also connect with me on:
