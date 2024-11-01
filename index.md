@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-# Welcome to My Research Website
+# Welcome to My Personal Website
 
 Hello! I’m Mohammad Abu Thaher Chowdhury, a PhD student at [RPI](https://www.rpi.edu/). My research focuses on understanding the nature of dark matter and its potential interactions at various scales.
 
