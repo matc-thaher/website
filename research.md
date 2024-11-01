@@ -27,10 +27,5 @@ Compared to larger galaxies like the Milky Way, which has hundreds of billion st
 
 This project aims to improve the accuracy of gravitational wave signal detection by reducing noise and interference, especially from glitches.
 
-## Perovskite Conductivity Studies
-
-<img src="/assets/research/perovskite_conductivity.jpg" alt="Perovskite Conductivity" width="300" style="float: right; margin-left: 15px; border: 1px solid #ddd;">
-
-Studying the effects of doping and polaron behavior in perovskite materials to improve understanding of their electrical conductivity properties.
 
 More details on specific projects can be found in my [Code Projects](/code/) section.
