@@ -10,7 +10,7 @@ My primary research area involves investigating the properties and interactions 
 
 ## Dark Matter
 
-<img src="/assets/research/dark_matter_properties.jpg" alt="Dark Matter Properties" width="300" style="float: right; margin-left: 15px; border: 1px solid #ddd;">
+<img src="/assets/research/dark_matter_properties.jpg" width="300" style="float: right; margin-left: 15px; border: 1px solid #ddd;">
 
 Dark matter (DM) is a mysterious and unseen matter that makes up approximately 27% of the universe's mass-energy content. It doesn't emit, absorb, or reflect light, making it invisible and detectable only through its gravitational effects on visible matter, such as galaxies and galaxy clusters. The first assumption of dark matter arose in the 1930s when astronomer <a href="https://ned.ipac.caltech.edu/level5/March17/Zwicky/translation.pdf" target= "_blank">Fritz Zwicky<a> observed that galaxies in the Coma Cluster were moving faster than expected based on the visible matter present. This led to the hypothesis that unseen "dark matter" was exerting extra gravitational pull to explain the high velocities. The galactic rotation curve problem in Babcock's observation proved that the stars move too fast to be bound by Newtonian gravity if all matter is visible. Other observations and work have demonstrated that DM exists. However, the nature of DM is still a mystery. How does it interact amongst DM particles and with other baryonic particles? Even if it does interact, which type of interaction is it? If a DM particle exists, does it have a dual nature like a photon?
 
