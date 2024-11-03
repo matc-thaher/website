@@ -16,12 +16,12 @@ Explore this website to learn more about my research projects, publications, and
         <figcaption>Hubble finds dark matter ring in galaxy cluster</figcaption>
     </figure>
     <figure>
-        <img src="/assets/images/image2.jpg" alt="Description of image 2">
-        <figcaption>Caption for image 2</figcaption>
+        <img src="/assets/Images/NGC6217.jpg" alt="Description of image 2">
+        <figcaption>NGC6217</figcaption>
     </figure>
     <figure>
-        <img src="/assets/images/image3.jpg" alt="Description of image 3">
-        <figcaption>Caption for image 3</figcaption>
+        <img src="/assets/Images/heic1315a.jpg" alt="Description of image 3">
+        <figcaption>The Hubble Sequence throughout the Universe's history</figcaption>
     </figure>
 </div>
 
