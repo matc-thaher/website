@@ -83,16 +83,16 @@ a:hover {
 
 /* Images */
 img {
-    /* max-width: 100%;
+    max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
-    border-radius: 5px;*/
-    float: right;                     /* Aligns the image to the right */
-    margin-left: 15px;                /* Adds space between the image and the text */
-    max-height: 300px;                /* Sets a maximum height (increase from 100px for better visibility) */
-    width: auto;                      /* Maintains the image's aspect ratio */               
-    border: 3px solid #ddd;           /* Adds a light border around the image */
-    display: block;                   /* Ensures the image is treated as a block element */
+    border-radius: 5px;
+    /*float: right;                     /* Aligns the image to the right */
+    /*margin-left: 15px;                /* Adds space between the image and the text */
+    /*max-height: 300px;                /* Sets a maximum height (increase from 100px for better visibility) */
+    /*width: auto;                      /* Maintains the image's aspect ratio */               
+    /*border: 3px solid #ddd;           /* Adds a light border around the image */
+    display: block;                   /* Ensures the image is treated as a block element */ 
 }
 
 img.float-right {
