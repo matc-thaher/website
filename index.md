@@ -11,20 +11,9 @@ Hello! I’m Mohammad Abu Thaher Chowdhury, a PhD student at [RPI](https://www.r
 Explore this website to learn more about my research projects, publications, and scientific code, and to connect with me for collaborations.
 
 
-<div class="image-gallery">
-    <figure>
-        <img src="/assets/Images/heic1315a.jpg" alt="Hubble's view of star clusters">
-        <figcaption>Caption for image 1</figcaption>
-    </figure>
-    <figure>
-        ![Alt text](/assets/Images/DM_ring_galxycluster.jpg)
-        <figcaption>Caption for image 2</figcaption>
-    </figure>
-    <figure>
-        ![Alt text](/assets/Images/NGC6217.jpg){: .custom-image2}
-        <figcaption>Caption for image 3</figcaption>
-    </figure>
-</div>
+![Dark Matter Ring Galaxy Cluster](/assets/Images/DM_ring_galxycluster.jpg){: .custom-image2}
+![NGC 6217 Galaxy](/assets/Images/NGC6217.jpg){: .custom-image2}
+![Galaxy Cluster](/assets/Images/heic1315a.jpg){: .custom-image2}
 
 
 ---
