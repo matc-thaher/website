@@ -10,11 +10,11 @@ Hello! I’m Mohammad Abu Thaher Chowdhury, a PhD student at [RPI](https://www.r
 
 Explore this website to learn more about my research projects, publications, and scientific code, and to connect with me for collaborations.
 
-
-![Dark Matter Ring Galaxy Cluster](/assets/Images/DM_ring_galxycluster.jpg){: .custom-image2}
-![NGC 6217 Galaxy](/assets/Images/NGC6217.jpg){: .custom-image2}
-![Galaxy Cluster](/assets/Images/heic1315a.jpg){: .custom-image2}
-
+<div class="image-gallery-container">
+    ![Dark Matter Ring Galaxy Cluster](/assets/Images/DM_ring_galxycluster.jpg){: .custom-image2}
+    ![NGC 6217 Galaxy](/assets/Images/NGC6217.jpg){: .custom-image2}
+    ![Galaxy Cluster](/assets/Images/heic1315a.jpg){: .custom-image2}
+</div>
 
 ---
 
