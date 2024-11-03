@@ -13,7 +13,7 @@ Explore this website to learn more about my research projects, publications, and
 
 <div class="image-gallery">
     <figure>
-        ![Alt text](/assets/Images/heic1315a.jpg)
+        <img src="/assets/Images/heic1315a.jpg" alt="Hubble's view of star clusters">
         <figcaption>Caption for image 1</figcaption>
     </figure>
     <figure>
