@@ -147,6 +147,12 @@ img.float-right {
     margin-top: 5px;
 }
 
+.image-gallery-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
 
 /* Section Headers */
 h2, h3 {
