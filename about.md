@@ -6,9 +6,7 @@ permalink: /about/
 
 # Mohammad Abu Thaher Chowdhury
 
-<img src="/assets/Images/Me.jpg" alt="Image" style="float: right; margin-left: 15px; border: 1px solid #ddd;">
-
-![Alt text](/assets/Images/Me.jpg){: .custom-image }
+![Alt text](/assets/Images/Me.jpg)
 
 
 
