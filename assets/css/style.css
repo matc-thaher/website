@@ -104,7 +104,7 @@ img.float-right {
 .custom-image {
     max-width: 50%;          /* Restricts the image to half the container width */
     height: auto;
-    border-radius: 10px;
+    border-radius: 3px;
     border: 3px solid #333;   /* Darker border for visibility */
     display: block;    /* Allows images to align side-by-side */
     margin: 10px;             /* Adds space between images */
