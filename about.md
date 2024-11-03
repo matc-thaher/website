@@ -8,6 +8,8 @@ permalink: /about/
 
 <img src="assets/Images/Me.jpg" alt="Image" class="img">
 
+![Alt text](/assets/Images/Me.jpg)
+
 I am currently a PhD student at [RPI](https://www.rpi.edu/) in Troy, New York, USA, working as a graduate research assistant under the guidance of [Dr. Victor Robles Sanchez](https://sites.google.com/yale.edu/vrobles/home). My primary focus is on understanding [Dark Matter](https://science.nasa.gov/universe/overview/building-blocks/#dark-matter) and exploring its properties through theoretical research.
 
 Before my PhD, I earned my Master’s degree in Physics from the University of Texas Rio Grande Valley [(UTRGV)](https://www.utrgv.edu/) in 2022, where I worked with [Dr. Soumya D Mohanty](https://scholar.google.com/citations?user=C2xWWFsAAAAJ&hl=en) on gravitational wave data analysis. My thesis, "Glitch Estimation and Removal Using Adaptive Spline Fitting and Wavelet Shrinkage on the Gravitational Wave Data," is available in the [ProQuest eTheses Repository](https://www.proquest.com/docview/2801919094?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses).
