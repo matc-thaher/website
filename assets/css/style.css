@@ -119,6 +119,7 @@ img.float-right {
     display: inline-block;    /* Allows images to align side-by-side */
     margin: 10px;             /* Adds space between images */
     float: right;              /* Aligns the image to the left */
+    margin-bottom; 20px;
 }
 
 
