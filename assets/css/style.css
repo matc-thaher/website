@@ -108,7 +108,7 @@ img.float-right {
     border: 3px solid #333;   /* Darker border for visibility */
     display: inline-block;    /* Allows images to align side-by-side */
     margin: 10px;             /* Adds space between images */
-    float: left;              /* Aligns the image to the left */
+    float: right;              /* Aligns the image to the left */
 }
 
 
