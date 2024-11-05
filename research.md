@@ -15,6 +15,14 @@ My primary research area involves investigating the properties and interactions 
 *Proof of Dark Matter (this image is taken from [Argonne National Laboratory website](https://www.anl.gov/science-101/dark-matter-and-dark-energy))*
 *Dark Matter Simulation based ofn different Dark Matter Theory ( this image is taken from [a paper](https://link.springer.com/article/10.1007/s41115-021-00013-z))*
 
+<div style="display: flex; justify-content: center; gap: 20px;">
+    <div style="text-align: center;">
+        ![Alt text](/assets/Images/DM_ring_galxycluster.jpg){: .custom-image2}
+        <p style="font-size: 0.9em; color: #555;">Caption for DM Ring Galaxy Cluster</p>
+    </div>
+</div>
+
+
 Dark matter (DM) is a mysterious and unseen matter that makes up approximately 27% of the universe's mass-energy content. It doesn't emit, absorb, or reflect light, making it invisible and detectable only through its gravitational effects on visible matter, such as galaxies and galaxy clusters. The first assumption of dark matter arose in the 1930s when astronomer [Fritz Zwicky](https://ned.ipac.caltech.edu/level5/March17/Zwicky/translation.pdf) observed that galaxies in the Coma Cluster were moving faster than expected based on the visible matter present. This led to the hypothesis that unseen "dark matter" was exerting extra gravitational pull to explain the high velocities. The galactic rotation curve problem in Babcock's observation proved that the stars move too fast to be bound by Newtonian gravity if all matter is visible. Other observations and work have demonstrated that DM exists. However, the nature of DM is still a mystery. How does it interact amongst DM particles and with other baryonic particles? Even if it does interact, which type of interaction is it? If a DM particle exists, does it have a dual nature like a photon?
 
 Despite decades of research, it has not been directly detected through any known particles or interactions outside of its gravitational effects. This discrepancy challenges existing particle physics and cosmology models, leading to ongoing debates and searches for alternative explanations. Until now, the most successful theory is Lambda—Cold Dark Matter (ΛCDM) theory, which can not explain the small-scale problems that arose from the theoretical model, like the missing satellite problem, too-big-to-fail problem, and cusp-core problem. There are other models, such as self-interacting dark matter (SIDM), fuzzy dark matter (FDM), and warm dark matter (WDM). I am currently investigating FDM, which is also known as Ultralight Dark Matter (UDM), Bose-Einstein condensate Dark Matter (BECDM), quantum Dark Matter, and Scalar Field Dark Matter (SFDM). This model may help solve the small-scale cosmology problem that Lambd-CDM can not solve.
