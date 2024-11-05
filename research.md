@@ -10,8 +10,8 @@ My primary research area involves investigating the properties and interactions 
 
 ## Dark Matter
 
-![Dark Matter existence graph](/assets/Images/DM_existence.jpg){: .custom-image3 + em:last-of-type}
-![Dark Matter simulation](/assets/Images/DM_simulation.webp){: .custom-image3 + em:last-of-type}
+![Dark Matter existence graph](/assets/Images/DM_existence.jpg){: .custom-image3}
+![Dark Matter simulation](/assets/Images/DM_simulation.webp){: .custom-image3}
 
 ---
 Proof of Dark Matter (this image is taken from [Argonne National Laboratory website](https://www.anl.gov/science-101/dark-matter-and-dark-energy))
