@@ -11,6 +11,7 @@ My primary research area involves investigating the properties and interactions 
 ## Dark Matter
 
 ![Dark Matter existence graph](/assets/Images/DM_existence.jpg){: .custom-image3}
+<span class="custom-caption">*Caption for DM Ring Galaxy Cluster*</span>
 ![Dark Matter simulation](/assets/Images/DM_simulation.webp){: .custom-image3}
 *Proof of Dark Matter (this image is taken from [Argonne National Laboratory website](https://www.anl.gov/science-101/dark-matter-and-dark-energy))*
 *Dark Matter Simulation based ofn different Dark Matter Theory ( this image is taken from [a paper](https://link.springer.com/article/10.1007/s41115-021-00013-z))*
