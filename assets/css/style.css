@@ -122,7 +122,7 @@ img.float-right {
     margin-bottom; 20px;
 }
 
-.custom-image3 + em:last-of-type{
+.custom-image3{
     max-width: 50%;          /* Restricts the image to half the container width */
     height: auto;
     border-radius: 3px;
@@ -130,15 +130,6 @@ img.float-right {
     display: inline-block;    /* Allows images to align side-by-side */
     margin: 10px;             /* Adds space between images */
     margin-bottom; 20px;
-}
-
-/* Optional: Style for captions */
-.custom-caption {
-    text-align: center;
-    font-style: italic;
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 5px;
 }
 
 .image-gallery {
