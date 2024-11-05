@@ -207,6 +207,8 @@ footer {
     background-color: #333;
     color: #fff;
     font-size: 0.9em;
+    position: relative;
+    z-index: 1;
 }
 
 footer a {
