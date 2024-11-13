@@ -27,9 +27,13 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
+    font-size: 2em;           /* Adjust font size as needed */
+    color: #333;              /* Text color */
+    text-align: center;       /* Center align the text */
+    margin-top: 20px;         /* Add some space above */
+    margin-bottom: 20px;      /* Add space below */
+    font-weight: bold;        /* Make the text bold */
+    line-height: 1.4;         /* Improve readability */
 }
 
 /* header nav a {
