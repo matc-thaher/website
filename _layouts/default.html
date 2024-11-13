@@ -33,7 +33,7 @@
 
     <!-- Header Section -->
     <header>
-        <h1>{{ site.title }}</h1>
+         <h1>{{ page.header_phrase | default: "Default Header Phrase" }}</h1>
         <nav>
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
