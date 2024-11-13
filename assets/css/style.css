@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-    font-size: 2em;           /* Adjust font size as needed */
+    font-size: 1em;           /* Adjust font size as needed */
     color: #333;              /* Text color */
     text-align: center;       /* Center align the text */
     margin-top: 20px;         /* Add some space above */
