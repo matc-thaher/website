@@ -32,7 +32,7 @@ header h1 {
     text-align: center;       /* Center align the text */
     margin-top: 20px;         /* Add some space above */
     margin-bottom: 20px;      /* Add space below */
-    font-weight: bold;        /* Make the text bold */
+    font-weight: normal;        /* Make the text bold */
     line-height: 1.4;         /* Improve readability */
 }
 
