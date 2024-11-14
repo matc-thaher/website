@@ -2,6 +2,7 @@
 layout: default
 title: Talks
 permalink: /talks/
+header_phrase: "Every great and deep difficulty bears in itself its own solution. It forces us to change our thinking in order to find it. - Niels Bohr"
 ---
 
 # Talks and Presentations
