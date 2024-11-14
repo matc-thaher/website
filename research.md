@@ -2,7 +2,7 @@
 layout: default
 title: Research
 permalink: /research/
-header_phrase: "The wise man is one who knows what he does not know. The humility of this knowing makes him strong. - Lao Tzu (Tao Te Ching)"
+header_phrase: "Study hard what interests you the most in the most undisciplined, irreverent, and original manner possible. - Richard Feynman"
 ---
 
 # Research
