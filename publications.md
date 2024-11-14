@@ -2,6 +2,7 @@
 layout: default
 title: Publications
 permalink: /publications/
+header phrase: "The wise man is one who knows what he does not know. The humility of this knowing makes him strong. - Lao Tzu (Tao Te Ching)"
 ---
 
 # Publications
