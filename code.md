@@ -2,6 +2,7 @@
 layout: default
 title: Code
 permalink: /code/
+header_phrase: "What we observe is not nature itself, but nature exposed to our method of questioning. - Werner Heisenberg"
 ---
 
 # Scientific Code and Projects
