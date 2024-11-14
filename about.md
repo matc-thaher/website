@@ -2,6 +2,7 @@
 layout: default
 title: About Me
 permalink: /about/
+header_phrase: "Pride that dines on vanity, sups on contempt. - Benjamin Franklin (Poor Richard's Almanack)"
 ---
 
 # Mohammad Abu Thaher Chowdhury
