@@ -16,7 +16,8 @@ Explore this website to learn more about my research projects, publications, and
 ![NGC 6217 Galaxy](/assets/Images/NGC6217.jpg){: .custom-image3}
 ![Galaxy Cluster](/assets/Images/heic1315a.jpg){: .custom-image3}
 
-## Recent news
+**🗞️ Recent News**
+- 🌐 **May 2025**: Launched this personal website!
 
 ---
 
