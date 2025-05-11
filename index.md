@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Mohammad Abu Thaher Chowdhury
 permalink: /
 header_phrase: "Consider well the seed that gave you birth: You were not made to live like brutes, but to follow virtue and knowledge. - Dante (Inferno)"
 ---
