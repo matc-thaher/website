@@ -27,13 +27,13 @@ header {
 }
 
 header h1 {
-    font-size: 1em;           /* Adjust font size as needed */
+    font-size: 0.5em;           /* Adjust font size as needed */
     color: orange;              /* Text color */
     text-align: center;       /* Center align the text */
     margin-top: 20px;         /* Add some space above */
     margin-bottom: 20px;      /* Add space below */
     font-weight: normal;        /* Make the text bold */
-    line-height: 1.4;         /* Improve readability */
+    line-height: 1;         /* Improve readability */
 }
 
 /* header nav a {
