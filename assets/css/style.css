@@ -30,7 +30,7 @@ header h1 {
     font-size: 0.7em;           /* Adjust font size as needed */
     color: orange;              /* Text color */
     text-align: center;       /* Center align the text */
-    margin-top: 20px;         /* Add some space above */
+    margin-top: 10px;         /* Add some space above */
     margin-bottom: 20px;      /* Add space below */
     font-weight: normal;        /* Make the text bold */
     line-height: 1;         /* Improve readability */
