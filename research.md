@@ -36,7 +36,7 @@ Compared to larger galaxies like the Milky Way, which has hundreds of billion st
 
 ## Gravitational Wave Data Analysis
 
-<img src="/assets/research/gravitational_wave.jpg" alt="Gravitational Wave Data Analysis" width="300" style="float: right; margin-left: 15px; border: 1px solid #ddd;">
+![Glitch subtraction from GW170817 (binary neutron star signal)](/assets/Images/glitch_GW170817.png){: .custom-image3}
 
 Gravitational wave detectors like LIGO, Virgo, and KAGRA are highly sensitive instruments designed to measure incredibly faint spacetime distortions caused by astrophysical events.  Their sensitivity, however, also increases the likelihood that they will pick up glitches, which are temporary noise artifacts. A number of factors, such as seismic activity, thermal fluctuations, electronic noise, and human-induced disturbances, can produce glitches, which are short-duration, non-astrophysical signals [(Abbott et al., 2016)](https://iopscience.iop.org/article/10.3847/2041-8205/833/1/L1). It can be difficult to identify and analyze events like binary mergers or supernovae because of these noise artifacts, which can hide or mimic real gravitational wave signals across a wide range of time-frequency characteristics [(Powell et al., 2016)](https://iopscience.iop.org/article/10.1088/1361-6382/34/3/034002). Fixing this problem is essential since errors obscure signals and raise the false alarm rate, lowering the statistical confidence of detections. [(Mogushi, 2021)](https://arxiv.org/abs/2105.10522).
 
