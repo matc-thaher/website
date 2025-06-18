@@ -23,8 +23,7 @@ My research interests lie in various fields of Physics, especially Theoretical P
 
 You can find more details about my publications, research work, and academic profile on these platforms:
 
-- [Google Scholar](https://scholar.google.com/citations?user=your-google-scholar-id)
-- [ORCID](https://orcid.org/your-orcid-id)
+- [Linkedin](https://www.linkedin.com/in/thaher608)
 - [ResearchGate](https://www.researchgate.net/profile/your-profile-id)
 - [GitHub](https://github.com/your-username)
 
