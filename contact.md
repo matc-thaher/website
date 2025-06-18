@@ -13,8 +13,7 @@ If you’re interested in collaborating or have any questions regarding my resea
 
 You can also connect with me on:
 
-- [Google Scholar](https://scholar.google.com/citations?user=your-google-scholar-id)
-- [ORCID](https://orcid.org/your-orcid-id)
+- [LinkedIn](https://www.linkedin.com/in/thaher608)
 - [ResearchGate](https://www.researchgate.net/profile/your-profile-id)
 - [GitHub](https://github.com/your-username)
 
