@@ -369,3 +369,14 @@ footer a:hover { color: #cfe1ff; }
   .image-gallery{ grid-template-columns: 1fr; }
 }
 
+.socials{
+  display:flex; gap:10px; margin-top:12px;
+}
+.socials a{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:36px; height:36px; border-radius:999px;
+  border:1px solid var(--ring, rgba(0,122,204,.25));
+  color: var(--text, #1f2937); text-decoration:none;
+}
+.socials a:hover{ box-shadow: 0 0 0 3px var(--ring, rgba(0,122,204,.25)) inset; }
+
