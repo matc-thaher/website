@@ -37,7 +37,10 @@
 
     <!-- Header Section -->
     <header>
-         <h1>{{ page.header_phrase | default: "Default Header Phrase" }}</h1>
+        {% comment %} Only show the header phrase when explicitly allowed {% endcomment %}
+        {% if page.show_header_phrase != false and page.header_phrase %}
+              <h1>{{ page.header_phrase }}</h1>
+        {% endif %}
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
