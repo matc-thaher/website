@@ -33,6 +33,7 @@ show_header_phrase: false
   <!-- Right: name + bio + research interests -->
   <div>
   {% capture about_right %}
+  
   # Mohammad Abu Thaher Chowdhury
 
   I am currently a PhD student at [RPI](https://www.rpi.edu/) in Troy, New York, USA, working as a graduate research assistant under the guidance of [Asst. Prof. Victor Robles Sanchez](https://pages.github.rpi.edu/roblev/vrobles/). During my PhD, my primary focus is on understanding the nature of [Dark Matter](https://science.nasa.gov/universe/overview/building-blocks/#dark-matter), galaxy formation, and evolution through theoretical and computational research.
