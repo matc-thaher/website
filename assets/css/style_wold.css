@@ -1,0 +1,285 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #004085;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 0.7em;           /* Adjust font size as needed */
+    color: orange;              /* Text color */
+    text-align: center;       /* Center align the text */
+    margin-top: 10px;         /* Add some space above */
+    margin-bottom: 20px;      /* Add space below */
+    font-weight: normal;        /* Make the text bold */
+    line-height: 1;         /* Improve readability */
+}
+
+/* header nav a {
+    text-decoration: none;
+    color: #007acc;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #005fa3;
+} */
+
+/* Hamburger menu toggle hidden by default */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+}
+
+/* For horizontal navigation */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+nav ul li {
+    margin-right: 15px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    padding: 8px 12px; /* Add padding to make links clickable */
+    font-weight: bold; /* Optional for emphasis */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    background-color: #e0e0e0; /* Optional background color on hover */
+    border-radius: 5px; /* Rounded edges for hover background */
+}
+
+/* Links and Buttons */
+a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005fa3;
+}
+
+/* Images */
+img {
+    max-height: 300px;
+    width: auto;
+    border: 3px solid #ddd;
+    /*border-radius: 5px;
+    /*float: right;                     /* Aligns the image to the right */
+    /*margin-left: 15px;                /* Adds space between the image and the text */
+    /*max-height: 300px;                /* Sets a maximum height (increase from 100px for better visibility) */
+    /*width: auto;                      /* Maintains the image's aspect ratio */               
+    /*border: 3px solid #ddd;           /* Adds a light border around the image */
+    display: block;                   /* Ensures the image is treated as a block element */ 
+}
+
+img.float-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.custom-image {
+    max-width: 50%;          /* Restricts the image to half the container width */
+    height: auto;
+    border-radius: 3px;
+    border: 3px solid #333;   /* Darker border for visibility */
+    display: block;    /* Allows images to align side-by-side */
+    margin: 10px;             /* Adds space between images */
+    float: right;              /* Aligns the image to the left */
+}
+
+.custom-image2 {
+    max-width: 50%;          /* Restricts the image to half the container width */
+    height: auto;
+    border-radius: 3px;
+    border: 3px solid #333;   /* Darker border for visibility */
+    display: inline-block;    /* Allows images to align side-by-side */
+    margin: 10px;             /* Adds space between images */
+    float: right;              /* Aligns the image to the left */
+    margin-bottom; 20px;
+}
+
+.custom-image3{
+    max-width: 50%;          /* Restricts the image to half the container width */
+    height: auto;
+    border-radius: 3px;
+    border: 3px solid #333;   /* Darker border for visibility */
+    display: inline-block;    /* Allows images to align side-by-side */
+    margin: 10px;             /* Adds space between images */
+    margin-bottom; 20px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.image-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.image-gallery figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.image-gallery-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+
+/* Section Headers */
+h2, h3 {
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #007acc;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #005fa3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Hamburger icon shown */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide the nav links initially */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004085;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+
+    header {
+        position: relative;
+    }
+}

@@ -1,57 +1,119 @@
-/* General Layout */
+/* ---------- Design tokens (new) ---------- */
+:root{
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #1f2937;
+  --muted:#6b7280;
+  --brand:#007acc;
+  --brand-dark:#005fa3;
+  --ring: rgba(0,122,204,.25);
+
+  --radius:12px;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+  --s1:.5rem; --s2:.75rem; --s3:1rem; --s4:1.5rem; --s5:2rem;
+  --maxw: 72ch; /* comfortable reading width */
+}
+
+/* Respect user preference for dark mode */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b1020; --panel:#111831; --text:#E6ECF3; --muted:#A8B3C7;
+    --brand:#7AA2F7; --brand-dark:#4f7bd9; --ring:rgba(122,162,247,.28);
+  }
+}
+
+/* ---------- Base & layout ---------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior:smooth; }
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: var(--bg);
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
+    width: 92%;
+    max-width: 1000px;                /* wider canvas */
     margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    padding: 24px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
 }
 
-/* Header */
+/* Optional: keep long paragraphs readable if you wrap them in .prose */
+.prose { max-width: var(--maxw); }
+
+/* ---------- Header & nav ---------- */
 header {
-    background-color: #004085;
+    position: sticky;                 /* sticky bar */
+    top: 0;
+    z-index: 100;
+    background-color: #0b3b6e;       /* deeper blue for contrast */
     color: white;
     padding: 10px 0;
-    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    backdrop-filter: blur(6px);
 }
 
 header h1 {
-    font-style: italic;
-    font-size: 0.7em;           /* Adjust font size as needed */
-    color: orange;              /* Text color */
-    text-align: center;       /* Center align the text */
-    margin-top: 10px;         /* Add some space above */
-    margin-bottom: 20px;      /* Add space below */
-    font-weight: normal;        /* Make the text bold */
-    line-height: 1;         /* Improve readability */
+    font-style: normal;               /* cleaner */
+    font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+    color: #ffd166;                   /* warmer accent */
+    text-align: center;
+    margin: 6px 0 10px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
-/* header nav a {
+/* Show a slim tagline if you have one */
+header p.tagline{ 
+    margin: 0 0 8px; color: rgba(255,255,255,.9); font-size:.95rem 
+}
+
+/* Nav: horizontal on desktop */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li { margin: 0; }
+
+nav ul li a {
     text-decoration: none;
-    color: #007acc;
-    margin: 0 10px;
-    font-weight: bold;
+    color: white;                     /* visible on the blue bar */
+    padding: 8px 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color .25s ease, color .25s ease, box-shadow .25s ease;
 }
 
-header nav a:hover {
-    color: #005fa3;
-} */
+nav ul li a:hover {
+    background-color: rgba(255,255,255,.12);
+    color: #fff;
+    box-shadow: 0 0 0 3px var(--ring) inset;
+}
+
+/* Highlight current page by adding class="active" to the link */
+nav ul li a.active{
+    background: rgba(255,255,255,.18);
+    color:#fff;
+}
 
 /* Hamburger menu toggle hidden by default */
-.menu-toggle {
-    display: none;
-}
+.menu-toggle { display: none; }
 
 .menu-icon {
     display: none;
@@ -65,201 +127,152 @@ header nav a:hover {
     z-index: 1001;
 }
 
-/* For horizontal navigation */
-nav ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Display items in a row */
-}
-
-nav ul li {
-    margin-right: 15px; /* Space between links */
-}
-
-nav ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #007bff; /* Link color */
-    padding: 8px 12px; /* Add padding to make links clickable */
-    font-weight: bold; /* Optional for emphasis */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
-}
-
-nav ul li a:hover {
-    color: #0056b3; /* Darker shade on hover */
-    background-color: #e0e0e0; /* Optional background color on hover */
-    border-radius: 5px; /* Rounded edges for hover background */
-}
-
-/* Links and Buttons */
+/* ---------- Links & buttons ---------- */
 a {
-    color: #007acc;
+    color: var(--brand);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.25s ease, box-shadow .25s ease;
 }
+a:hover { color: var(--brand-dark); }
 
-a:hover {
-    color: #005fa3;
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    color: #fff;
+    background-color: var(--brand);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.25s ease, transform .05s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
 }
+.button:hover { background-color: var(--brand-dark); }
+.button:active{ transform: translateY(1px); }
 
-/* Images */
+/* ---------- Images & gallery ---------- */
 img {
-    max-height: 300px;
-    width: auto;
-    border: 3px solid #ddd;
-    /*border-radius: 5px;
-    /*float: right;                     /* Aligns the image to the right */
-    /*margin-left: 15px;                /* Adds space between the image and the text */
-    /*max-height: 300px;                /* Sets a maximum height (increase from 100px for better visibility) */
-    /*width: auto;                      /* Maintains the image's aspect ratio */               
-    /*border: 3px solid #ddd;           /* Adds a light border around the image */
-    display: block;                   /* Ensures the image is treated as a block element */ 
-}
-
-img.float-right {
-    float: right;
-    margin-left: 15px;
-    margin-bottom: 15px;
-}
-
-.custom-image {
-    max-width: 50%;          /* Restricts the image to half the container width */
+    max-width: 100%;
     height: auto;
-    border-radius: 3px;
-    border: 3px solid #333;   /* Darker border for visibility */
-    display: block;    /* Allows images to align side-by-side */
-    margin: 10px;             /* Adds space between images */
-    float: right;              /* Aligns the image to the left */
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;       /* subtle frame */
 }
 
-.custom-image2 {
-    max-width: 50%;          /* Restricts the image to half the container width */
-    height: auto;
-    border-radius: 3px;
-    border: 3px solid #333;   /* Darker border for visibility */
-    display: inline-block;    /* Allows images to align side-by-side */
-    margin: 10px;             /* Adds space between images */
-    float: right;              /* Aligns the image to the left */
-    margin-bottom; 20px;
-}
+/* Remove the heavy default border from generic images */
+img:not(.custom-image):not(.custom-image2):not(.custom-image3){ border-width:1px }
 
+/* Float helpers (if you still need them) */
+img.float-right { float: right; margin-left: 15px; margin-bottom: 15px; }
+
+/* Your custom image classes—cleaned and fixed typos */
+.custom-image,
+.custom-image2,
 .custom-image3{
-    max-width: 50%;          /* Restricts the image to half the container width */
-    height: auto;
-    border-radius: 3px;
-    border: 3px solid #333;   /* Darker border for visibility */
-    display: inline-block;    /* Allows images to align side-by-side */
-    margin: 10px;             /* Adds space between images */
-    margin-bottom; 20px;
-}
-
-.image-gallery {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.image-gallery img {
     max-width: 50%;
     height: auto;
-    border-radius: 5px;
-    border: 2px solid #ddd;
+    border-radius: 8px;
+    border: 2px solid #333;
+    display: inline-block;
+    margin: 10px;
 }
+.custom-image{ float: right; }
+.custom-image2{ float: right; }
+.custom-image3{ /* no float; center by default */ }
 
-.image-gallery figure {
-    margin: 0;
+/* FIX: margin-bottom typo (was using ';' as value) */
+.custom-image2,
+.custom-image3{ margin-bottom: 20px; }
+
+/* Modern, tidy gallery */
+.image-gallery {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    align-items: start;
+    justify-items: center;
+    margin: var(--s4) 0;
+}
+.image-gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;             /* consistent tiles */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+.image-gallery figure { 
+    margin: 0; width: 100%; 
+}
+.image-gallery figcaption {
+    font-size: 0.9em;
+    color: var(--muted);
+    margin-top: 6px;
     text-align: center;
 }
 
-.image-gallery figcaption {
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 5px;
-}
-
+/* Keep galleries off the footer line */
 .image-gallery-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Adjust this value as needed */
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    margin-bottom: 24px;
 }
 
-
-/* Section Headers */
+/* ---------- Headings ---------- */
 h2, h3 {
-    color: #333;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #007acc;
+    color: var(--text);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--brand);
 }
 
 h2 {
-    font-size: 1.8em;
-    margin-top: 30px;
+    font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+    margin-top: 28px;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: clamp(1.15rem, 1.8vw, 1.4rem);
     margin-top: 20px;
 }
 
-/* List Styling */
-ul {
-    padding-left: 20px;
-    margin: 10px 0;
-}
+/* ---------- Lists ---------- */
+ul { padding-left: 20px; margin: 10px 0; }
+li { margin-bottom: 6px; }
 
-li {
-    margin-bottom: 5px;
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    background-color: #007acc;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #005fa3;
-}
-
-/* Footer */
+/* ---------- Footer ---------- */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9em;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 0.95em;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+footer a { color: #9ac5ff; }
+footer a:hover { color: #cfe1ff; }
+
+/* ---------- Motion/accessibility ---------- */
+@media (prefers-reduced-motion: reduce){
+  * { animation: none !important; transition: none !important; }
 }
 
-footer a {
-    color: #007acc;
-    text-decoration: none;
+/* ---------- Responsive ---------- */
+@media (max-width: 900px){
+  .image-gallery,
+  .image-gallery-container{ grid-template-columns: 1fr; }
 }
 
-footer a:hover {
-    color: #005fa3;
-}
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     /* Hamburger icon shown */
-    .menu-icon {
-        display: block;
-    }
+    .menu-icon { display: block; }
 
     /* Hide the nav links initially */
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #004085;
+        background-color: #0b3b6e;
         position: absolute;
         top: 60px;
         right: 0;
@@ -269,17 +282,14 @@ footer a:hover {
         text-align: center;
     }
 
-    .menu-toggle:checked + .menu-icon + nav ul {
-        display: flex;
-    }
+    .menu-toggle:checked + .menu-icon + nav ul { display: flex; }
 
     nav ul li a {
         color: white;
-        font-size: 1.2em;
-        padding: 10px 0;
+        font-size: 1.1em;
+        padding: 12px 0;
+        border-radius: 0;
     }
 
-    header {
-        position: relative;
-    }
+    header { position: relative; }
 }
