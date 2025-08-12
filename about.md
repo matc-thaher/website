@@ -20,7 +20,6 @@ show_header_phrase: false
   - **Location:** Troy, New York, USA
   - **Contact:** [Get in touch]({{ '/contact/' | relative_url }})
 
-  <!-- Compact socials row (Option A) -->
   <div class="socials">
     <a href="https://github.com/matc-thaher" aria-label="GitHub" rel="me" target="_blank">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.77-1.6-2.67-.3-5.47-1.33-5.47-5.9 0-1.3.47-2.37 1.23-3.2-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.22a11.4 11.4 0 0 1 6.01 0c2.28-1.54 3.29-1.22 3.29-1.22.66 1.65.25 2.87.12 3.17.77.83 1.23 1.9 1.23 3.2 0 4.59-2.81 5.59-5.49 5.89.43.37.82 1.09.82 2.2v3.26c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
@@ -31,8 +30,9 @@ show_header_phrase: false
   </div>
   </div>
 
-  <!-- Right: name + bio + research interests (Markdown parsed) -->
-  <div markdown="1">
+  <!-- Right: name + bio + research interests -->
+  <div>
+  {% capture about_right %}
   # Mohammad Abu Thaher Chowdhury
 
   I am currently a PhD student at [RPI](https://www.rpi.edu/) in Troy, New York, USA, working as a graduate research assistant under the guidance of [Asst. Prof. Victor Robles Sanchez](https://pages.github.rpi.edu/roblev/vrobles/). During my PhD, my primary focus is on understanding the nature of [Dark Matter](https://science.nasa.gov/universe/overview/building-blocks/#dark-matter), galaxy formation, and evolution through theoretical and computational research.
@@ -41,6 +41,8 @@ show_header_phrase: false
 
   ## Research Interests
   My research interests lie in various fields of Physics, especially Theoretical Physics, Astrophysics, Fundamental Physics, Computational Astrophysics, and Big Data. In astrophysics, I am particularly interested in dark matter, galaxy formation, and gravitational waves. I am also interested in the speed of light, electrodynamics, and the relationship between quantum and cosmological forces. During my master's at UTRGV, I worked on gravitational wave data and encountered many big data-related issues. Data from a variety of sources, including particle physics, astrophysics, and many other branches of physics, is growing in quantity over time. So, I want to work on algorithms that can solve problems related to big data. Currently, I am exploring the nature of dark matter, particularly in understanding its interactions and properties at different scales. This research contributes to the broader field of theoretical physics and our understanding of the universe.
+  {% endcapture %}
+  {{ about_right | markdownify }}
   </div>
 </section>
 
@@ -53,7 +55,6 @@ show_header_phrase: false
 ## Contact Information
 For inquiries or collaborations, please refer to the [Contact]({{ '/contact/' | relative_url }}) page.
 
-<!-- Quote moved to the bottom only -->
 <aside class="prose quote-callout" markdown="1">
 _“Pride that dines on vanity, sups on contempt.” — Benjamin Franklin, *Poor Richard’s Almanack*_
 </aside>
