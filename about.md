@@ -8,7 +8,7 @@ show_header_phrase: false
 
 <section class="about-grid">
   <!-- Left: photo + quick facts -->
-  <div markdown="1">
+  
   <figure style="margin:0; text-align:center;">
     <img class="headshot" src="{{ '/assets/Images/Me.jpg' | relative_url }}" alt="Portrait of Mohammad Abu Thaher Chowdhury" loading="lazy">
     <figcaption class="badge" style="display:inline-block; margin-top:8px;">Troy, NY · RPI</figcaption>
