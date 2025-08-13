@@ -1,0 +1,48 @@
+name: Update publications (Scholar + arXiv + ORCID + Crossref)
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"     # Mondays 04:00 UTC
+  workflow_dispatch:        # allow manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  update-pubs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install scholarly==1.7.11 feedparser requests unidecode python-dateutil
+
+      - name: Merge sources & update data
+        env:
+          SCHOLAR_USER_ID: ${{ secrets.SCHOLAR_USER_ID }}    # optional but best
+          SCHOLAR_NAME:    ${{ secrets.SCHOLAR_NAME }}       # optional fallback
+          ARXIV_AUTHOR:    "Mohammad Abu Thaher Chowdhury"   # adjust if needed
+          ORCID_ID:        ${{ secrets.ORCID_ID }}           # optional (e.g., 0000-0000-0000-0000)
+          CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}    # your email for polite API use
+        run: |
+          python scripts/update_publications.py
+
+      - name: Commit & push changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add _data/scholar.json
+            git commit -m "chore: merged publications (Scholar + arXiv + ORCID + Crossref)"
+            git push
+          else
+            echo "No changes."
+          fi
