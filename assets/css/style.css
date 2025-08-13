@@ -380,21 +380,21 @@ footer a:hover { color: #cfe1ff; }
 }
 .socials a:hover{ box-shadow: 0 0 0 3px var(--ring, rgba(0,122,204,.25)) inset; }
 
-/* Research page alternating layout */
+/* --- Research: alternating layout with consistent text width --- */
 .research-section{
   display:grid;
-  grid-template-columns: minmax(0,1fr) 420px; /* text | media */
-  gap: 24px;
-  align-items: center;
-  margin: 32px 0;
+  grid-template-columns: 1fr 360px;     /* text | media */
+  gap: 20px;
+  align-items: start;
 }
-.research-section .content { /* optional width rhythm */ }
-.research-section .content h2{ margin: 0 0 8px; }
-.research-section .content p{ margin: 0 0 10px; }
-.research-section .content ul{ margin: 8px 0 0 18px; }
+.research-section .content{ grid-column: 1; }
+.research-section .media{ grid-column: 2; }
 
+/* Media styling */
 .research-section .media{
-  display:block;
+  display: grid;
+  gap: 12px;
+  align-content: start;
 }
 .research-section .media img,
 .research-section .media video{
@@ -402,7 +402,7 @@ footer a:hover { color: #cfe1ff; }
   height: auto;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
-  display:block;
+  display: block;
 }
 .research-section .media iframe{
   width: 100%;
@@ -411,30 +411,29 @@ footer a:hover { color: #cfe1ff; }
   border-radius: 12px;
 }
 
-/* flip order for alternating sections */
-.research-section.flip .content{ order: 2; }
-.research-section.flip .media{ order: 1; }
-
-/* stack on mobile */
-@media (max-width: 900px){
-  .research-section{ grid-template-columns: 1fr; }
-  .research-section.flip .content,
-  .research-section.flip .media{ order: initial; }
-}
-
-/* All flipped research sections: match text width to non-flip sections */
+/* Flipped sections: media | text, but keep media in the narrow track */
 .research-section.flip{
-  grid-template-columns: minmax(0,1fr) min(360px, 42vw);
+  grid-template-columns: 360px 1fr;     /* media | text */
 }
+.research-section.flip .content{ grid-column: 2; }
+.research-section.flip .media{ grid-column: 1; }
 
-/* Optional: make media thumbnails a bit shorter in flipped sections */
-.research-section.flip .media img{
-  aspect-ratio: 4/3; /* try 3/2 or 1/1 if you prefer */
-}
+/* Optional: make flipped images a touch shorter */
+.research-section.flip .media img{ aspect-ratio: 4/3; object-fit: cover; }
 
-/* Keep the same mobile stacking */
+/* Neutralize any earlier 'order' styles */
+.research-section .content,
+.research-section .media{ order: initial !important; }
+
+/* Mobile stack */
 @media (max-width: 900px){
+  .research-section,
   .research-section.flip{ grid-template-columns: 1fr; }
+  .research-section .content,
+  .research-section .media,
+  .research-section.flip .content,
+  .research-section.flip .media{ grid-column: auto; }
 }
+
 
 
