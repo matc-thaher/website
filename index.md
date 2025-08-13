@@ -5,11 +5,11 @@ permalink: /
 show_header_phrase: false
 ---
 
-{::options parse_block_html="true" /}   <!-- <— this line is the key -->
+
 
 <section class="home-hero">
   <!-- Left column: enable Markdown parsing inside HTML -->
-  
+  <div markdown="1">
   <span class="tagline-chip">PhD @ RPI · Cosmology</span>
 
   <h1>Mohammad Abu Thaher Chowdhury</h1>
@@ -21,7 +21,7 @@ show_header_phrase: false
     <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
     <a class="button" href="{{ '/code/' | relative_url }}">Code</a>
   </div>
-  
+  </div>
 
   <!-- Right column -->
   <div>
