@@ -425,4 +425,19 @@ footer a:hover { color: #cfe1ff; }
 /* only the Galaxy Formation section */
 #galaxy-formation .media img { aspect-ratio: 5/2; }  /* or 4/3, 1/1 */
 
+/* All flipped research sections: match text width to non-flip sections */
+.research-section.flip{
+  grid-template-columns: minmax(0,1fr) min(360px, 42vw);
+}
+
+/* Optional: make media thumbnails a bit shorter in flipped sections */
+.research-section.flip .media img{
+  aspect-ratio: 4/3; /* try 3/2 or 1/1 if you prefer */
+}
+
+/* Keep the same mobile stacking */
+@media (max-width: 900px){
+  .research-section.flip{ grid-template-columns: 1fr; }
+}
+
 
