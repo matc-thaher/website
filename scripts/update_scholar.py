@@ -1,3 +1,89 @@
+# scripts/update_scholar.py
+import json, os, sys, time
+from datetime import datetime
+from pathlib import Path
+
+from scholarly import scholarly
+
+OUT_PATH = Path("_data/scholar.json")
+USER_ID = os.environ.get("SCHOLAR_USER_ID", "").strip()
+USER_NAME = os.environ.get("SCHOLAR_NAME", "").strip()
+
+def load_existing():
+    if OUT_PATH.exists():
+        try:
+            return json.loads(OUT_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {"updated": "", "publications": []}
+
+def fetch_author_by_id(user_id: str):
+    a = scholarly.search_author_id(user_id)
+    a = scholarly.fill(a, sections=["publications"])
+    return a
+
+def fetch_author_by_name(name: str):
+    q = scholarly.search_author(name)
+    a = scholarly.fill(next(q), sections=["publications"])
+    return a
+
+def fetch(author, limit=150):
+    pubs = []
+    for i, p in enumerate(author.get("publications", [])[:limit], start=1):
+        try:
+            p_full = scholarly.fill(p, sections=["bib", "citation_link"])
+            bib = p_full.get("bib", {})
+            title = bib.get("title") or "Untitled"
+            authors = ", ".join(bib.get("author", [])) if isinstance(bib.get("author"), list) else (bib.get("author") or "")
+            year = bib.get("pub_year") or bib.get("year") or ""
+            try:
+                year = int(year)
+            except Exception:
+                year = ""
+            venue = bib.get("venue") or bib.get("journal") or bib.get("publisher") or ""
+            url = p_full.get("pub_url") or p_full.get("eprint_url") or ""
+            pdf_url = p_full.get("eprint_url") or ""
+
+            pubs.append({
+                "title": title,
+                "authors": authors,
+                "year": year,
+                "venue": venue,
+                "url": url,
+                "pdf_url": pdf_url,
+                "citations": p_full.get("num_citations", 0)
+            })
+            time.sleep(0.5)  # be polite
+        except Exception as e:
+            print(f"WARN: could not fetch pub {i}: {e}", file=sys.stderr)
+            continue
+    return pubs
+
+def main():
+    previous = load_existing()
+    try:
+        if USER_ID:
+            author = fetch_author_by_id(USER_ID)
+        elif USER_NAME:
+            author = fetch_author_by_name(USER_NAME)
+        else:
+            print("ERROR: set SCHOLAR_USER_ID (preferred) or SCHOLAR_NAME in repo secrets.", file=sys.stderr)
+            sys.exit(1)
+
+        pubs = fetch(author)
+        data = {"updated": datetime.utcnow().isoformat() + "Z", "publications": pubs}
+        OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        OUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"OK: wrote {len(pubs)} records to {OUT_PATH}")
+    except Exception as e:
+        # Keep whatever you had before
+        print(f"ERROR: fetch failed ({e}); keeping previous data", file=sys.stderr)
+        OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        OUT_PATH.write_text(json.dumps(previous, ensure_ascii=False, indent=2), encoding="utf-8")
+        sys.exit(0)  # don’t fail the job
+
+if __name__ == "__main__":
+    main()
 import json, os, sys, time
 from datetime import datetime
 
