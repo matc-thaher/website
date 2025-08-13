@@ -8,7 +8,7 @@ show_header_phrase: false
 
 <section class="about-grid">
   <!-- Left: photo + quick facts -->
-  
+  <div markdown="1">
   <figure style="margin:0; text-align:center;">
     <img class="headshot" src="{{ '/assets/Images/Me.jpg' | relative_url }}" alt="Portrait of Mohammad Abu Thaher Chowdhury" loading="lazy">
     <figcaption class="badge" style="display:inline-block; margin-top:8px;">Troy, NY · RPI</figcaption>
@@ -28,7 +28,7 @@ show_header_phrase: false
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.37V9h3.4v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm-1.78 13.02h3.56V9H3.56v11.45Z"/></svg>
     </a>
   </div>
-  
+  </div>
 
   <!-- Right: name + bio + research interests -->
    <div>
