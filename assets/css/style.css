@@ -381,17 +381,31 @@ footer a:hover { color: #cfe1ff; }
 .socials a:hover{ box-shadow: 0 0 0 3px var(--ring, rgba(0,122,204,.25)) inset; }
 
 /* --- Research: alternating layout with consistent text width --- */
+/* ===== Research layout: consistent text width + fixed media width ===== */
+:root{
+  /* tune these two numbers to taste */
+  --research-media-w: 340px;   /* width of the image/video column on desktop */
+  --research-measure: 68ch;    /* max line length for paragraphs */
+}
+
 .research-section{
-  display:grid;
-  grid-template-columns: 1fr 360px;     /* text | media */
+  display: grid;
+  grid-template-columns: minmax(0,1fr) var(--research-media-w); /* text | media */
   gap: 20px;
   align-items: start;
 }
-.research-section .content{ grid-column: 1; }
-.research-section .media{ grid-column: 2; }
 
-/* Media styling */
+.research-section .content{
+  grid-column: 1;
+  /* keep paragraphs the same length in every section */
+  max-width: var(--research-measure);
+  min-width: 0;                 /* allow shrink */
+  overflow-wrap: anywhere;      /* wrap long links/DOIs */
+  hyphens: auto;
+}
+
 .research-section .media{
+  grid-column: 2;
   display: grid;
   gap: 12px;
   align-content: start;
@@ -411,29 +425,22 @@ footer a:hover { color: #cfe1ff; }
   border-radius: 12px;
 }
 
-/* Flipped sections: media | text, but keep media in the narrow track */
+/* Flipped rows: media | text, but keep media the same fixed width */
 .research-section.flip{
-  grid-template-columns: 360px 1fr;     /* media | text */
+  grid-template-columns: var(--research-media-w) minmax(0,1fr); /* media | text */
 }
 .research-section.flip .content{ grid-column: 2; }
-.research-section.flip .media{ grid-column: 1; }
+.research-section.flip .media{   grid-column: 1; }
 
-/* Optional: make flipped images a touch shorter */
+/* Optional: slightly shorter thumbnails on flipped rows */
 .research-section.flip .media img{ aspect-ratio: 4/3; object-fit: cover; }
 
-/* Neutralize any earlier 'order' styles */
-.research-section .content,
-.research-section .media{ order: initial !important; }
-
-/* Mobile stack */
-@media (max-width: 900px){
+/* Mobile: stack cleanly */
+@media (max-width: 720px){
   .research-section,
   .research-section.flip{ grid-template-columns: 1fr; }
   .research-section .content,
   .research-section .media,
   .research-section.flip .content,
-  .research-section.flip .media{ grid-column: auto; }
+  .research-section.flip .media{ grid-column: auto; max-width: none; }
 }
-
-
-
