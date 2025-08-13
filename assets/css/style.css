@@ -399,7 +399,7 @@ footer a:hover { color: #cfe1ff; }
 .research-section.flip .media{   grid-column: 1; }
 
 /* Optional: shorter thumbnails on flipped rows */
-.research-section.flip .media img{ aspect-ratio: 4 / 3; object-fit: cover; }
+.research-section.flip .media img{ aspect-ratio: 5 / 4; object-fit: cover; }
 
 /* Kill any lingering 'order' styles from older CSS */
 .research-section .content,
