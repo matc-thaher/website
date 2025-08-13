@@ -395,7 +395,7 @@ footer a:hover { color: #cfe1ff; }
 .research-section.flip{
   grid-template-columns: clamp(280px, 32vw, 360px) minmax(0, 1fr);
 }
-.research-section.flip .content{ grid-column: 2; min-width: 0; }
+.research-section.flip .content{ grid-column: 2; min-width: 0; overflow-wrap: anywhere; }
 .research-section.flip .media{   grid-column: 1; }
 
 /* Optional: shorter thumbnails on flipped rows */
