@@ -40,6 +40,10 @@ show_header_phrase: false
   <p>No publications yet. Check back soon.</p>
 {% endif %}
 
+{% if site.data.scholar.updated %}
+<p class="pub-updated"><em>Last updated: {{ site.data.scholar.updated | date: "%B %d, %Y" }}</em></p>
+{% endif %}
+
 <!-- Quote moved to the bottom only -->
 <aside class="prose quote-callout" style="margin-top:24px;">
   <em>{{ page.header_phrase }}</em>
