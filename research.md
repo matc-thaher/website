@@ -44,7 +44,7 @@ show_header_phrase: false
 </section>
 
 <!-- ========== Topic 2: media left | text right (.flip) ========== -->
-<section class="research-section flip">
+<section id="galaxy-formation" class="research-section flip">
   <div class="content">
     <h2>Galaxy Formation</h2>
 
