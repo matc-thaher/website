@@ -423,6 +423,6 @@ footer a:hover { color: #cfe1ff; }
 }
 
 /* make only the middle section’s images shorter (if it's the only .flip) */
-.research-section.flip .media img { aspect-ratio: 3/2; } /* try 4/3 or 1/1 if you prefer */
+.research-section.flip .media img { aspect-ratio: 1/2; } /* try 4/3 or 1/1 if you prefer */
 
 
