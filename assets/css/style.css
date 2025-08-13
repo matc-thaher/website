@@ -469,3 +469,5 @@ footer a:hover { color: #cfe1ff; }
 }
 .badge-link:hover{ box-shadow: 0 0 0 3px var(--ring, rgba(0,122,204,.25)) inset; }
 
+.pub-updated{ color: var(--muted, #6b7280); margin-top: -6px; }
+
