@@ -380,3 +380,46 @@ footer a:hover { color: #cfe1ff; }
 }
 .socials a:hover{ box-shadow: 0 0 0 3px var(--ring, rgba(0,122,204,.25)) inset; }
 
+/* Research page alternating layout */
+.research-section{
+  display:grid;
+  grid-template-columns: minmax(0,1fr) 420px; /* text | media */
+  gap: 24px;
+  align-items: center;
+  margin: 32px 0;
+}
+.research-section .content { /* optional width rhythm */ }
+.research-section .content h2{ margin: 0 0 8px; }
+.research-section .content p{ margin: 0 0 10px; }
+.research-section .content ul{ margin: 8px 0 0 18px; }
+
+.research-section .media{
+  display:block;
+}
+.research-section .media img,
+.research-section .media video{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display:block;
+}
+.research-section .media iframe{
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* flip order for alternating sections */
+.research-section.flip .content{ order: 2; }
+.research-section.flip .media{ order: 1; }
+
+/* stack on mobile */
+@media (max-width: 900px){
+  .research-section{ grid-template-columns: 1fr; }
+  .research-section.flip .content,
+  .research-section.flip .media{ order: initial; }
+}
+
+
