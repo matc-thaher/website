@@ -28,22 +28,25 @@ show_header_phrase: false
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.37V9h3.4v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm-1.78 13.02h3.56V9H3.56v11.45Z"/></svg>
     </a>
   </div>
-  </div>
+  
 
   <!-- Right: name + bio + research interests -->
-  <div>
-  {% capture about_right %}
-  
-  # Mohammad Abu Thaher Chowdhury
+   <div>
+    <h1>Mohammad Abu Thaher Chowdhury</h1>
+    <p>I am currently a PhD student at <a href="https://www.rpi.edu/" target="_blank" rel="noopener">RPI</a> in Troy, New York, USA, working as a graduate research assistant under the guidance of
+      <a href="https://pages.github.rpi.edu/roblev/vrobles/" target="_blank" rel="noopener">Asst. Prof. Victor Robles Sanchez</a>. During my PhD, my primary focus is on understanding the nature of
+      <a href="https://science.nasa.gov/universe/overview/building-blocks/#dark-matter" target="_blank" rel="noopener">Dark Matter</a>, galaxy formation, and evolution through theoretical and computational research.
+    </p>
+    <p>Before my PhD, I earned my Master’s degree in Physics from the University of Texas Rio Grande Valley (<a href="https://www.utrgv.edu/" target="_blank" rel="noopener">UTRGV</a>) in 2022, where I worked with
+      <a href="https://scholar.google.com/citations?user=C2xWWFsAAAAJ&hl=en" target="_blank" rel="noopener">Professor Soumya D Mohanty</a> on gravitational wave data analysis. My thesis,
+      <em>"Glitch Estimation and Removal Using Adaptive Spline Fitting and Wavelet Shrinkage on the Gravitational Wave Data"</em>, is available in the
+      <a href="https://www.proquest.com/docview/2801919094?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses" target="_blank" rel="noopener">ProQuest eTheses Repository</a>.
+      I earned a B.Sc. in Physics from Shahjalal University of Science and Technology (<a href="https://www.sust.edu/" target="_blank" rel="noopener">SUST</a>), Sylhet, Bangladesh, in 2015 and a master's in Physics in 2017.
+      During my master's at SUST, I worked on condensed matter physics, specifically perovskite conductivity.
+    </p>
 
-  I am currently a PhD student at [RPI](https://www.rpi.edu/) in Troy, New York, USA, working as a graduate research assistant under the guidance of [Asst. Prof. Victor Robles Sanchez](https://pages.github.rpi.edu/roblev/vrobles/). During my PhD, my primary focus is on understanding the nature of [Dark Matter](https://science.nasa.gov/universe/overview/building-blocks/#dark-matter), galaxy formation, and evolution through theoretical and computational research.
-
-  Before my PhD, I earned my Master’s degree in Physics from the University of Texas Rio Grande Valley ([UTRGV](https://www.utrgv.edu/)) in 2022, where I worked with [Professor Soumya D Mohanty](https://scholar.google.com/citations?user=C2xWWFsAAAAJ&hl=en) on gravitational wave data analysis. My thesis, *"Glitch Estimation and Removal Using Adaptive Spline Fitting and Wavelet Shrinkage on the Gravitational Wave Data,"* is available in the [ProQuest eTheses Repository](https://www.proquest.com/docview/2801919094?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses). I earned a B.Sc. in Physics from Shahjalal University of Science and Technology ([SUST](https://www.sust.edu/)), Sylhet, Bangladesh, in 2015 and a master's in Physics in 2017. During my master's at SUST, I worked on condensed matter physics, specifically perovskite conductivity.
-
-  ## Research Interests
-  My research interests lie in various fields of Physics, especially Theoretical Physics, Astrophysics, Fundamental Physics, Computational Astrophysics, and Big Data. In astrophysics, I am particularly interested in dark matter, galaxy formation, and gravitational waves. I am also interested in the speed of light, electrodynamics, and the relationship between quantum and cosmological forces. During my master's at UTRGV, I worked on gravitational wave data and encountered many big data-related issues. Data from a variety of sources, including particle physics, astrophysics, and many other branches of physics, is growing in quantity over time. So, I want to work on algorithms that can solve problems related to big data. Currently, I am exploring the nature of dark matter, particularly in understanding its interactions and properties at different scales. This research contributes to the broader field of theoretical physics and our understanding of the universe.
-  {% endcapture %}
-  {{ about_right | markdownify }}
+    <h2>Research Interests</h2>
+    <p>My research interests lie in various fields of Physics, especially Theoretical Physics, Astrophysics, Fundamental Physics, Computational Astrophysics, and Big Data. In astrophysics, I am particularly interested in dark matter, galaxy formation, and gravitational waves. I am also interested in the speed of light, electrodynamics, and the relationship between quantum and cosmological forces. During my master's at UTRGV, I worked on gravitational wave data and encountered many big data-related issues. Data from a variety of sources, including particle physics, astrophysics, and many other branches of physics, is growing in quantity over time. So, I want to work on algorithms that can solve problems related to big data. Currently, I am exploring the nature of dark matter, particularly in understanding its interactions and properties at different scales. This research contributes to the broader field of theoretical physics and our understanding of the universe.</p>
   </div>
 </section>
 
