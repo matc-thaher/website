@@ -423,6 +423,6 @@ footer a:hover { color: #cfe1ff; }
 }
 
 /* only the Galaxy Formation section */
-#galaxy-formation .media img { aspect-ratio: 3/2; }  /* or 4/3, 1/1 */
+#galaxy-formation .media img { aspect-ratio: 5/2; }  /* or 4/3, 1/1 */
 
 
