@@ -35,10 +35,10 @@ exclude:
 
 # Social and profiles (you can add these to the footer or in your about page)
 social_links:
-  google_scholar: "https://scholar.google.com/citations?user=your-google-scholar-id"
-  orcid: "https://orcid.org/your-orcid-id"
-  researchgate: "https://www.researchgate.net/profile/your-profile-id"
-  github: "https://github.com/your-username"
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=52g5ZvIAAAAJ"
+  orcid: "https://orcid.org/my-orcid?orcid=0000-0002-7578-6832"
+  researchgate: "https://www.researchgate.net/profile/Mohammad-Chowdhury-58?ev=hdr_xprf"
+  github: "https://github.com/matc-thaher"
 
 # Collections (if you have separate sections for publications, research, etc.)
 collections:
