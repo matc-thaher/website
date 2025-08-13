@@ -7,6 +7,11 @@ from urllib.parse import urlencode, quote_plus
 import requests
 import feedparser
 from dateutil import parser as dtparser
+import difflib
+import itertools
+import re
+
+ARXIV_RE = re.compile(r'arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})(?:v\d+)?', re.I)
 
 # Scholar can be flaky on CI; import guarded
 try:
@@ -18,6 +23,38 @@ except Exception:
 OUT_PATH = Path("_data/scholar.json")
 
 # --- Helpers ---------------------------------------------------------------
+def extract_arxiv_id(s: str) -> str:
+    if not s:
+        return ""
+    m = ARXIV_RE.search(s)
+    return (m.group(1).lower() if m else "")
+
+def keys_for_item(it):
+    keys = []
+    doi = (it.get("doi") or "").strip().lower()
+    if doi:
+        keys.append(("doi", doi))
+    # try url/pdf_url for arxiv id
+    arx = extract_arxiv_id(it.get("url") or "") or extract_arxiv_id(it.get("pdf_url") or "")
+    if arx:
+        keys.append(("arxiv", arx))
+    nt = norm_title(it.get("title", ""))
+    if nt:
+        keys.append(("title", nt))
+    return keys
+
+def fuzzy_same_title(a: str, b: str, thresh: float = 0.9) -> bool:
+    if not a or not b:
+        return False
+    ra = norm_title(a)
+    rb = norm_title(b)
+    if not ra or not rb:
+        return False
+    # quick exact-or-substring checks
+    if ra == rb or ra in rb or rb in ra:
+        return True
+    # fall back to ratio
+    return difflib.SequenceMatcher(None, ra, rb).ratio() >= thresh
 
 def norm_title(t: str) -> str:
     t = (t or "").strip().lower()
@@ -215,24 +252,58 @@ def crossref_enrich(item, mailto=None):
 
 # --- Merge/dedupe ----------------------------------------------------------
 
+def merge_two(a, b):
+    """Merge b into a."""
+    for f in ["title", "authors", "venue", "url", "pdf_url", "doi", "year"]:
+        if not a.get(f) and b.get(f):
+            a[f] = b[f]
+    a["citations"] = max(a.get("citations", 0), b.get("citations", 0))
+    a["source"] = sorted(list(set((a.get("source") or []) + (b.get("source") or []))))
+    return a
+
 def merge_items(lists):
-    merged = {}
-    for lst in lists:
-        for it in lst:
-            key = it.get("doi") or norm_title(it.get("title", ""))
-            if not key:
+    # Pass 1: merge by DOI / arXiv / normalized title
+    merged = []
+    index = {}  # key -> idx in merged
+
+    for it in itertools.chain.from_iterable(lists):
+        # try to find an existing record by any key
+        found_idx = None
+        for k in keys_for_item(it):
+            if k in index:
+                found_idx = index[k]
+                break
+        if found_idx is None:
+            merged.append(it)
+            idx = len(merged) - 1
+            for k in keys_for_item(it):
+                index[k] = idx
+        else:
+            merge_two(merged[found_idx], it)
+            # refresh index with possibly new keys (e.g., DOI just added)
+            for k in keys_for_item(merged[found_idx]):
+                index[k] = found_idx
+
+    # Pass 2: fuzzy title merge (handles punctuation/casing differences)
+    i = 0
+    while i < len(merged):
+        j = i + 1
+        while j < len(merged):
+            ai, aj = merged[i], merged[j]
+            # same DOI or arXiv id -> definitely same
+            same_doi = (ai.get("doi") or "").lower() and (ai.get("doi") or "").lower() == (aj.get("doi") or "").lower()
+            same_arx = extract_arxiv_id(ai.get("url") or "") and extract_arxiv_id(ai.get("url") or "") == extract_arxiv_id(aj.get("url") or "")
+            # otherwise, fuzzy title + close year
+            close_year = (not ai.get("year") or not aj.get("year") or abs(int(ai.get("year") or 0) - int(aj.get("year") or 0)) <= 1)
+            if same_doi or same_arx or (fuzzy_same_title(ai.get("title", ""), aj.get("title", "")) and close_year):
+                merge_two(ai, aj)
+                merged.pop(j)
                 continue
-            if key not in merged:
-                merged[key] = it
-            else:
-                # merge fields, prefer non-empty; keep max citations; union sources
-                existing = merged[key]
-                for f in ["title", "authors", "venue", "url", "pdf_url", "doi", "year"]:
-                    if not existing.get(f) and it.get(f):
-                        existing[f] = it[f]
-                existing["citations"] = max(existing.get("citations", 0), it.get("citations", 0))
-                existing["source"] = sorted(list(set(existing.get("source", []) + it.get("source", []))))
-    return list(merged.values())
+            j += 1
+        i += 1
+
+    return merged
+
 
 # --- Main ------------------------------------------------------------------
 
@@ -282,10 +353,13 @@ def main():
         enriched.append(crossref_enrich(it, mailto=cr_mailto))
         time.sleep(0.25)
 
-    # Final sort: newest first, then title
-    enriched.sort(key=lambda x: (x.get("year") or 0, (x.get("title") or "").lower()), reverse=True)
+    # Deduplicate again (post-enrichment, now that DOIs exist)
+    final = merge_items([enriched])
 
-    data = {"updated": datetime.utcnow().isoformat() + "Z", "publications": enriched}
+    # Final sort
+    final.sort(key=lambda x: (x.get("year") or 0, (x.get("title") or "").lower()), reverse=True)
+
+    data = {"updated": datetime.utcnow().isoformat() + "Z", "publications": final}
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"OK: wrote {len(enriched)} publications to {OUT_PATH}")
