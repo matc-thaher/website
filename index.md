@@ -12,10 +12,9 @@ show_header_phrase: false
   <div markdown="1">
   <span class="tagline-chip">PhD @ RPI · Cosmology</span>
 
-  <h1>Mohammad Abu Thaher Chowdhury</h1>
+  # Mohammad Abu Thaher Chowdhury
 
-  <p> I explore fuzzy/ultralight dark matter, galaxy formation, and glitch-resilient data analysis. Browse my research, publications, and open-source code — or reach out to collaborate.
-  </p>
+   I explore fuzzy/ultralight dark matter, galaxy formation, and glitch-resilient data analysis. Browse my research, publications, and open-source code — or reach out to collaborate.
   <div class="hero-cta">
     <a class="button" href="{{ '/research/' | relative_url }}">View Research</a>
     <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
