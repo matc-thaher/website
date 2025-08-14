@@ -15,26 +15,26 @@ Invited talks, conference presentations, seminars, and posters. Items are groupe
 {% if talks and talks.size > 0 %}
 {% assign last_year = "" %}
 {% for t in talks %}
-{% assign y = t.date | date: "%Y" %}
-{% if y == '' and t.year %}{% assign y = t.year %}{% endif %}
-## {{ y }}
-{% if y != last_year %}
-## {{ y }}
-{% assign last_year = y %}
-{% endif %}
+  {% assign y = t.date | date: "%Y" %}
+  {% if y == '' and t.year %}{% assign y = t.year %}{% endif %}
 
-**{{ t.title }}**  
-{%- if t.type -%}_{{ t.type }}_ · {%- endif -%}
-{%- if t.event -%}{{ t.event }}{%- endif -%}
-{%- if t.location -%} · {{ t.location }}{%- endif -%}
-{%- if t.date -%} · {{ t.date | date: "%Y" }}{%- endif -%}  
-{%- if t.coauthors -%}_With {{ t.coauthors }}_{%- endif -%}
+  {% if y != last_year %}
+  ## {{ y }}
+  {% assign last_year = y %}
+  {% endif %}
 
-{%- if t.url or t.slides or t.poster or t.video -%}
-[Event]({{ t.url }}){%- if t.slides %} · [Slides]({{ t.slides }}){%- endif -%}{%- if t.poster %} · [Poster]({{ t.poster }}){%- endif -%}{%- if t.video %} · [Video]({{ t.video }}){%- endif -%}
-{%- endif %}
+  **{{ t.title }}**  
+  {%- if t.type -%}_{{ t.type }}_ · {%- endif -%}
+  {%- if t.event -%}{{ t.event }}{%- endif -%}
+  {%- if t.location -%} · {{ t.location }}{%- endif -%}
+  {%- if t.date -%} · {{ t.date | date: "%Y" }}{%- endif -%}  
+  {%- if t.coauthors -%}_With {{ t.coauthors }}_{%- endif -%}
 
----
+  {%- if t.url or t.slides or t.poster or t.video -%}
+  [Event]({{ t.url }}){%- if t.slides %} · [Slides]({{ t.slides }}){%- endif -%}{%- if t.poster %} · [Poster]({{ t.poster }}){%- endif -%}{%- if t.video %} · [Video]({{ t.video }}){%-    endif -%}
+  {%- endif %}
+
+  ---
 {% endfor %}
 {% else %}
 No talks listed yet.
