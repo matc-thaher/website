@@ -285,7 +285,7 @@ footer a:hover { color: #cfe1ff; }
     .menu-toggle:checked + .menu-icon + nav ul { display: flex; }
 
     nav ul li a {
-        color: white;
+        color: black;
         font-size: 1.1em;
         padding: 12px 0;
         border-radius: 0;
