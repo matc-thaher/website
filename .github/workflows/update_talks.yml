@@ -1,0 +1,40 @@
+name: Update talks (manual + Scholar merge)
+
+on:
+  schedule: [{ cron: "0 6 * * 1" }]   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-talks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install scholarly==1.7.11 pyyaml unidecode python-dateutil
+
+      - name: Merge talks
+        env:
+          SCHOLAR_USER_ID: ${{ secrets.SCHOLAR_USER_ID }}   # optional
+          SCHOLAR_NAME:    ${{ secrets.SCHOLAR_NAME }}      # fallback
+        run: python scripts/update_talks.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add _data/talks.json
+            git commit -m "chore: update talks (merge manual + Scholar)"
+            git push
+          else
+            echo "No changes."
+          fi
