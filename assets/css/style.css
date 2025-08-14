@@ -583,6 +583,7 @@ footer a:hover { color: #cfe1ff; }
 .muted{ color: #6b7280; }
 
 /* Contact page layout */
+/* Contact page layout */
 .contact-grid{
   display: grid;
   grid-template-columns: minmax(0,1fr) 360px; /* text | card */
@@ -624,3 +625,46 @@ footer a:hover { color: #cfe1ff; }
 /* Small muted text */
 .muted{ color: #6b7280; }
 
+/* Contact card: higher contrast background + clear icon buttons */
+.contact-card{
+  background: #f0f5ff;           /* soft indigo tint for contrast */
+  border: 1px solid #c7d2fe;
+}
+
+.contact-card .label,
+.contact-card a{ color: #0f172a; }     /* darker text/links on tinted bg */
+.contact-card a:hover{ text-decoration: underline; }
+
+/* Make the social icons stand out as circular buttons */
+.contact-card .socials{
+  display: flex; gap: 10px; margin-top: 10px;
+}
+.contact-card .socials a{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 999px;
+  background: #ffffff;               /* white puck against the tinted card */
+  border: 1px solid rgba(0,0,0,.08);
+  color: #0f172a;                    /* SVGs use currentColor */
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  text-decoration: none;
+}
+.contact-card .socials a:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
+}
+
+/* Optional: dark-mode refinement */
+@media (prefers-color-scheme: dark){
+  .contact-card{
+    background: #0b1220;
+    border-color: #1e293b;
+  }
+  .contact-card .label,
+  .contact-card a{ color: #e6edf3; }
+  .contact-card .socials a{
+    background: #111827;
+    border-color: #2b3443;
+    color: #e6edf3;
+  }
+}
