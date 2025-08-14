@@ -507,6 +507,11 @@ footer a:hover { color: #cfe1ff; }
 }
 .talk-links .badge-link:hover{ box-shadow:0 0 0 3px rgba(0,122,204,.15) inset; }
 
+/* Talks: make year headings bold and keep tidy spacing */
+.talk-year{
+  font-weight: 700;
+  margin: 18px 0 8px;
+}
 
 /* Code page cards */
 /* --- Code page: improve card contrast & readability --- */
