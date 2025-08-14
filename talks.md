@@ -25,7 +25,8 @@ Invited talks, conference presentations, seminars, and posters. Items are groupe
   {% assign y = y | slice: 0, 4 %}
 
   {% if y != last_year and y.size == 4 %}
-    <h2> {{ y }} </h2>
+    ## {{ y }}
+    {: .talk-year }
     {% assign last_year = y %}
   {% endif %}
   
