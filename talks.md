@@ -15,13 +15,14 @@ Invited talks, conference presentations, seminars, and posters. Items are groupe
 {% if talks and talks.size > 0 %}
 {% assign last_year = "" %}
 {% for t in talks %}
-  {% assign y = t.date | date: "%Y" %}
-  {% if y == '' and t.year %}{% assign y = t.year %}{% endif %}
 
-  {% if y != last_year %}
-  ## {{ y }}
-  {% assign last_year = y %}
-  {% endif %}
+  {%- comment -%}
+  Compute a year string:
+  1) Prefer t.year if you set it in your data
+  2) Else use t.date and force it to a 4-char year by slicing
+  {%- endcomment -%}
+  {% assign y = t.year | default: t.date | date: "%Y" %}
+  {% assign y = y | slice: 0, 4 %}
 
   **{{ t.title }}**  
   {%- if t.type -%}_{{ t.type }}_ · {%- endif -%}
