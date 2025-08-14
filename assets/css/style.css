@@ -471,6 +471,43 @@ footer a:hover { color: #cfe1ff; }
 
 .pub-updated{ color: var(--muted, #6b7280); margin-top: -6px; }
 
+/* Talks page */
+.talk-year{ margin: 18px 0 8px; }
+
+.talk-item{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:12px 14px;
+  box-shadow:0 2px 10px rgba(0,0,0,.03);
+  margin-bottom:10px;
+}
+
+.talk-header{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.talk-title{ margin:0; line-height:1.2; }
+
+.talk-type{
+  display:inline-block;
+  font-size:.8rem;
+  padding:2px 8px;
+  border-radius:999px;
+  background:#eef2ff;
+  border:1px solid #c7d2fe;
+  color:#3730a3;
+}
+
+.talk-meta{ color:#6b7280; margin-top:4px; display:flex; flex-wrap:wrap; gap:6px; }
+.talk-coauthors{ color:#4b5563; margin-top:6px; }
+.talk-notes{ margin:6px 0 0; }
+
+.talk-links{ margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; }
+.talk-links .badge-link{
+  display:inline-block; font-size:.85rem; padding:2px 8px; border-radius:999px;
+  border:1px solid rgba(0,122,204,.25); text-decoration:none;
+}
+.talk-links .badge-link:hover{ box-shadow:0 0 0 3px rgba(0,122,204,.15) inset; }
+
+
 /* Code page cards */
 /* --- Code page: improve card contrast & readability --- */
 .project-card{
