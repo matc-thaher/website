@@ -16,6 +16,8 @@ Invited talks, conference presentations, seminars, and posters. Items are groupe
 {% assign last_year = "" %}
 {% for t in talks %}
 {% assign y = t.date | date: "%Y" %}
+{% if y == '' and t.year %}{% assign y = t.year %}{% endif %}
+## {{ y }}
 {% if y != last_year %}
 ## {{ y }}
 {% assign last_year = y %}
