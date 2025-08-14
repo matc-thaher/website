@@ -2,8 +2,9 @@
 layout: default
 title: Talks
 permalink: /talks/
-header_phrase: "Every great and deep difficulty bears in itself its own solution. It forces us to change our thinking in order to find it. — Niels Bohr"
+header_phrase: "Every great and deep difficulty bears in itself its own solution. — Niels Bohr"
 show_header_phrase: false
+render_with_liquid: true
 ---
 
 <h1>Talks & Presentations</h1>
@@ -27,8 +28,8 @@ show_header_phrase: false
       </div>
       <div class="talk-meta">
         {% if t.event %}<span class="muted">{{ t.event }}</span>{% endif %}
-        {% if t.location %}<span class="muted">· {{ t.location }}</span>{% endif %}
-        {% if t.date %}<span class="muted">· {{ t.date | date: "%b %-d, %Y" }}</span>{% endif %}
+        {% if t.location %}<span class="muted"> · {{ t.location }}</span>{% endif %}
+        {% if t.date %}<span class="muted"> · {{ t.date | date: "%b %-d, %Y" }}</span>{% endif %}
       </div>
       {% if t.coauthors %}<div class="talk-coauthors">With {{ t.coauthors }}</div>{% endif %}
       {% if t.notes %}<p class="talk-notes">{{ t.notes }}</p>{% endif %}
