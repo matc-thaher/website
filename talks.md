@@ -25,7 +25,7 @@ Invited talks, conference presentations, seminars, and posters. Items are groupe
 {%- if t.type -%}_{{ t.type }}_ · {%- endif -%}
 {%- if t.event -%}{{ t.event }}{%- endif -%}
 {%- if t.location -%} · {{ t.location }}{%- endif -%}
-{%- if t.date -%} · {{ t.date | date: "%b %-d, %Y" }}{%- endif -%}  
+{%- if t.date -%} · {{ t.date | date: "%Y" }}{%- endif -%}  
 {%- if t.coauthors -%}_With {{ t.coauthors }}_{%- endif -%}
 
 {%- if t.url or t.slides or t.poster or t.video -%}
