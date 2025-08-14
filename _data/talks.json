@@ -1,1 +1,31 @@
-{ "updated": "", "items": [] }
+{
+  "updated": "2025-08-14T15:57:14.831948Z",
+  "items": [
+    {
+      "title": "Application of Adaptive Spline Regression and Wavelet-based Method on Glitches in Gravitational Wave Data",
+      "type": "Talk",
+      "event": "APS Joint Fall Meeting (Texas Sections), Rice University",
+      "location": "Houston, TX, USA",
+      "date": "2022-10-xx",
+      "url": "https://meetings.aps.org/Meeting/TSF22/Session/F05.5",
+      "slides": null,
+      "poster": null,
+      "video": null,
+      "coauthors": null,
+      "notes": null
+    },
+    {
+      "title": "Data-driven Data-fitting: Adaptive Spline Fitting and its Applications",
+      "type": "Poster",
+      "event": "TACCSTER 2021, University of Texas at Austin",
+      "location": "Austin, TX, USA",
+      "date": "2021-09-xx",
+      "url": "https://hdl.handle.net/2152/89587",
+      "poster": "https://hdl.handle.net/2152/89587",
+      "slides": null,
+      "video": null,
+      "coauthors": null,
+      "notes": null
+    }
+  ]
+}
