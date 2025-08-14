@@ -2,36 +2,65 @@
 layout: default
 title: Code
 permalink: /code/
-header_phrase: "What we observe is not nature itself, but nature exposed to our method of questioning. - Werner Heisenberg"
+header_phrase: "What we observe is not nature itself, but nature exposed to our method of questioning. — Werner Heisenberg"
+show_header_phrase: false
 ---
 
-# Scientific Code and Projects
+<h1>Scientific Code & Projects</h1>
 
-On this page, you’ll find links to my code repositories and scientific projects, including tools developed for my research in dark matter and data analysis. Many of these projects are open-source and available on GitHub for public use and collaboration.
+<p>Links to my research code and tools. “Featured” highlights a few active projects; the full list below updates automatically from GitHub.</p>
 
-## Projects
+<!-- ========= Featured (curate these) ========= -->
+<h2>Featured</h2>
+<div class="project-grid">
+  <article class="project-card">
+    <h3><a href="https://github.com/matc-thaher/dark-matter-simulations" target="_blank" rel="noopener">Dark Matter Simulations</a></h3>
+    <p>Scripts and analysis pipelines to explore ultralight/FDM cores, core–halo scaling, and rotation-curve fits.</p>
+    <div class="project-meta">
+      <span class="tag">Python</span>
+      <span class="tag">Astro</span>
+      <a class="badge-link" href="https://github.com/matc-thaher/dark-matter-simulations" target="_blank" rel="noopener">Repo →</a>
+    </div>
+  </article>
 
-### 1. Dark Matter Simulations
-- **Repository**: [Dark Matter Simulation Repository](https://github.com/your-username/dark-matter-simulations)
-- **Description**: This project includes a set of scripts and algorithms developed to simulate the behavior of dark matter particles under different conditions. The simulations are designed to help study dark matter properties at various scales and provide insights into its potential interactions.
+  <article class="project-card">
+    <h3><a href="https://github.com/matc-thaher/gravitational-wave-analysis" target="_blank" rel="noopener">Gravitational-Wave Analysis</a></h3>
+    <p>Adaptive spline fitting + wavelet shrinkage for glitch suppression; reproducible workflows on open LIGO/Virgo data.</p>
+    <div class="project-meta">
+      <span class="tag">Python</span>
+      <span class="tag">Signal Proc</span>
+      <a class="badge-link" href="https://github.com/matc-thaher/gravitational-wave-analysis" target="_blank" rel="noopener">Repo →</a>
+    </div>
+  </article>
+</div>
 
-### 2. Gravitational Wave Data Analysis
-- **Repository**: [Wavelet Shrinkage Gravitational Wave Analysis](https://github.com/your-username/gravitational-wave-analysis)
-- **Description**: Developed during my Master's thesis, this repository contains code for analyzing gravitational wave data using adaptive spline fitting and wavelet shrinkage. The project aims to improve the accuracy of gravitational wave signal extraction by reducing glitch interference.
+<!-- ========= All repositories (auto) ========= -->
+<h2>All repositories</h2>
 
-### 3. Perovskite Material Conductivity
-- **Repository**: [Perovskite Conductivity Analysis](https://github.com/your-username/perovskite-conductivity)
-- **Description**: This code is part of ongoing research on the electrical conductivity of perovskite materials, especially focused on doping effects and small polaron behavior. It includes simulation scripts for modeling conductivity and analyzing experimental data.
+{% assign repos = site.data.repos.repos | where_exp: "r", "r.fork == false" %}
+{% assign repos = repos | sort: "stargazers_count" | reverse %}
 
-## Contribution and Collaboration
+{% if repos and repos.size > 0 %}
+<div class="project-grid">
+  {% for r in repos %}
+  <article class="project-card">
+    <h3><a href="{{ r.html_url }}" target="_blank" rel="noopener">{{ r.name }}</a></h3>
+    <p>{{ r.description }}</p>
+    <div class="project-meta">
+      {% if r.language %}<span class="tag">{{ r.language }}</span>{% endif %}
+      {% if r.topics %}{% for t in r.topics limit:3 %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}
+      <span class="muted">★ {{ r.stargazers_count }}</span>
+      <span class="muted">Updated {{ r.updated_at | date: "%b %Y" }}</span>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+<p class="pub-updated"><em>Last synced: {{ site.data.repos.updated | date: "%B %d, %Y" }}</em></p>
+{% else %}
+<p><em>GitHub data isn’t loaded yet—showing hand-picked projects above.</em></p>
+{% endif %}
 
-I welcome contributions to these projects! If you're interested in collaborating or if you have any questions, feel free to reach out via my [Contact](/contact/) page. 
-
-All code repositories are hosted on my [GitHub profile](https://github.com/your-username).
-
-## License
-Each project has its own licensing information detailed in the repository, but generally, the projects are open for academic and non-commercial use. Please refer to individual repositories for specific licensing details.
-
----
-
-Thank you for exploring my code projects. Feel free to check out other sections of my website for more about my research and publications.
+<!-- Quote only at the bottom -->
+<aside class="prose quote-callout" style="margin-top:24px;">
+  <em>{{ page.header_phrase }}</em>
+</aside>
