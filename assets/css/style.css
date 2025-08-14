@@ -540,4 +540,87 @@ footer a:hover { color: #cfe1ff; }
   .badge-link{ color: #e6edf3; border-color: rgba(56,139,253,.35); background: transparent; }
 }
 
+/* Contact page layout */
+.contact-grid{
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 360px; /* text | card */
+  gap: 20px;
+  align-items: start;
+  margin: 8px 0 20px;
+}
+@media (max-width: 820px){
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+/* Card */
+.contact-card{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.03);
+}
+.contact-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.contact-row .label{
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Actions */
+.contact-actions{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.button.button-secondary{
+  background: transparent;
+  color: #007acc;
+  border: 1px solid #007acc;
+}
+
+/* Small muted text */
+.muted{ color: #6b7280; }
+
+/* Contact page layout */
+.contact-grid{
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 360px; /* text | card */
+  gap: 20px;
+  align-items: start;
+  margin: 8px 0 20px;
+}
+@media (max-width: 820px){
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+/* Card */
+.contact-card{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.03);
+}
+.contact-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.contact-row .label{
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Actions */
+.contact-actions{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.button.button-secondary{
+  background: transparent;
+  color: #007acc;
+  border: 1px solid #007acc;
+}
+
+/* Small muted text */
+.muted{ color: #6b7280; }
 
