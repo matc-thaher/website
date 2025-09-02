@@ -46,7 +46,7 @@ show_header_phrase: false
 </div>
 
 ## Recent News
-- **August 2025** — Completed a summer program on Quantum Computing and Quantum Information by IBM!
+- **August 2025** — Completed a summer program on Quantum Computing and Quantum Information conducted by IBM!
 - **May 2025** — Launched this personal website!
 
 For more about my background and current projects, visit the [About Me]({{ '/about/' | relative_url }}) page.
