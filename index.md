@@ -46,6 +46,7 @@ show_header_phrase: false
 </div>
 
 ## Recent News
+- **September 2025** — Became a Qiskit Advocate of IBM!
 - **August 2025** — Completed a summer program on Quantum Computing and Quantum Information conducted by IBM!
 - **May 2025** — Launched this personal website!
 
