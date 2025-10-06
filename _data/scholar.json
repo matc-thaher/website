@@ -1,59 +1,59 @@
 {
-  "updated": "2025-09-29T04:36:12.002322Z",
+  "updated": "2025-10-06T03:33:13.450974Z",
   "publications": [
     {
-      "title": "Influence of Yttrium(Y) on properties of Lanthanum Cobalt Oxides",
-      "authors": "Mohammad Abu Thaher Chowdhury, Shumsun Naher Begum",
-      "year": 2024,
-      "venue": "arXiv (cond-mat.mtrl-sci)",
-      "url": "http://arxiv.org/abs/2408.15798v1",
-      "pdf_url": "http://arxiv.org/pdf/2408.15798v1",
-      "doi": "",
-      "citations": 0,
-      "source": [
-        "arxiv"
-      ]
+      "title": "Glitch subtraction from gravitational wave data using adaptive spline fitting",
+      "authors": "Soumya D Mohanty and Mohammad AT Chowdhury",
+      "year": 2023,
+      "venue": "Classical and Quantum Gravity",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6382/acd0fe/meta",
+      "pdf_url": "",
+      "citations": 18
     },
     {
-      "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational\n  Wave Data Analysis: A Brief Review",
+      "title": "Application of adaptive spline regression and wavelet based method on glitches in gravitational wave data",
+      "authors": "Mohammad Abu Thaher Chowdhury and Soumya Mohanty",
+      "year": 2022,
+      "venue": "Bulletin of the American Physical Society",
+      "url": "https://meetings.aps.org/Meeting/TSF22/Session/F05.5",
+      "pdf_url": "",
+      "citations": 1
+    },
+    {
+      "title": "Influence of Yttrium (Y) on properties of Lanthanum Cobalt Oxides",
+      "authors": "Mohammad Abu Thaher Chowdhury and Shumsun Naher Begum",
+      "year": 2024,
+      "venue": "arXiv preprint arXiv:2408.15798",
+      "url": "https://arxiv.org/abs/2408.15798",
+      "pdf_url": "",
+      "citations": 0
+    },
+    {
+      "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational Wave Data Analysis: A Brief Review",
       "authors": "Mohammad Abu Thaher Chowdhury",
       "year": 2024,
-      "venue": "arXiv (gr-qc)",
-      "url": "http://arxiv.org/abs/2406.01318v1",
-      "pdf_url": "http://arxiv.org/pdf/2406.01318v1",
-      "doi": "10.48550/ARXIV.2406.01318",
-      "citations": 0,
-      "source": [
-        "arxiv",
-        "orcid"
-      ]
+      "venue": "",
+      "url": "https://arxiv.org/abs/2406.01318",
+      "pdf_url": "",
+      "citations": 0
     },
     {
-      "title": "Glitch subtraction from gravitational wave data using adaptive spline fitting",
-      "authors": "",
-      "year": 2023,
-      "venue": "Class. Quantum Grav.",
-      "url": "https://doi.org/10.1088/1361-6382/acd0fe",
+      "title": "Glitch Estimation and Removal Using Adaptive Spline Fitting and Wavelet Shrinkage on the Gravitational Wave Data",
+      "authors": "Mohammad Abu Thaher Chowdhury",
+      "year": 2022,
+      "venue": "",
+      "url": "https://search.proquest.com/openview/7f68a2c9fc2972f4eb08e0d1a8fcbd2e/1?pq-origsite=gscholar&cbl=18750&diss=y",
       "pdf_url": "",
-      "doi": "10.1088/1361-6382/acd0fe",
-      "citations": 0,
-      "source": [
-        "crossref",
-        "orcid"
-      ]
+      "citations": 0
     },
     {
-      "title": "Influence of Yttrium (Y) doping in Lanthanum Cobalt Oxide on electrical properties",
-      "authors": "",
-      "year": 2019,
-      "venue": "Unpublished",
-      "url": "https://rgdoi.net/10.13140/RG.2.2.31831.07841",
+      "title": "Data-driven Data-fitting: Adaptive Spline Fitting and its Applications",
+      "authors": "Thomas Cruz and MAT Chowdhury and Soumya D Mohanty",
+      "year": 2021,
+      "venue": "",
+      "url": "https://repositories.lib.utexas.edu/items/fd04b32c-04dd-4d45-ad74-d6f5b4f2b174",
       "pdf_url": "",
-      "doi": "10.13140/RG.2.2.31831.07841",
-      "citations": 0,
-      "source": [
-        "orcid"
-      ]
+      "citations": 0
     }
   ]
 }
