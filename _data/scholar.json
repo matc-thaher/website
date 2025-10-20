@@ -1,16 +1,30 @@
 {
-  "updated": "2025-10-13T04:35:30.231533Z",
+  "updated": "2025-10-20T04:39:31.998146Z",
   "publications": [
     {
-      "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational Wave Data Analysis: A Brief Review",
-      "authors": "",
+      "title": "Influence of Yttrium(Y) on properties of Lanthanum Cobalt Oxides",
+      "authors": "Mohammad Abu Thaher Chowdhury, Shumsun Naher Begum",
       "year": 2024,
-      "venue": "",
-      "url": "https://arxiv.org/abs/2406.01318",
-      "pdf_url": "",
+      "venue": "arXiv (cond-mat.mtrl-sci)",
+      "url": "http://arxiv.org/abs/2408.15798v1",
+      "pdf_url": "http://arxiv.org/pdf/2408.15798v1",
+      "doi": "",
+      "citations": 0,
+      "source": [
+        "arxiv"
+      ]
+    },
+    {
+      "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational\n  Wave Data Analysis: A Brief Review",
+      "authors": "Mohammad Abu Thaher Chowdhury",
+      "year": 2024,
+      "venue": "arXiv (gr-qc)",
+      "url": "http://arxiv.org/abs/2406.01318v1",
+      "pdf_url": "http://arxiv.org/pdf/2406.01318v1",
       "doi": "10.48550/ARXIV.2406.01318",
       "citations": 0,
       "source": [
+        "arxiv",
         "orcid"
       ]
     },
