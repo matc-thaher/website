@@ -1,30 +1,16 @@
 {
-  "updated": "2026-03-23T05:53:04.625959Z",
+  "updated": "2026-03-30T06:12:14.152967Z",
   "publications": [
     {
-      "title": "Influence of Yttrium(Y) on properties of Lanthanum Cobalt Oxides",
-      "authors": "Mohammad Abu Thaher Chowdhury, Shumsun Naher Begum",
-      "year": 2024,
-      "venue": "arXiv (cond-mat.mtrl-sci)",
-      "url": "https://arxiv.org/abs/2408.15798v1",
-      "pdf_url": "https://arxiv.org/pdf/2408.15798v1",
-      "doi": "",
-      "citations": 0,
-      "source": [
-        "arxiv"
-      ]
-    },
-    {
       "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational Wave Data Analysis: A Brief Review",
-      "authors": "Mohammad Abu Thaher Chowdhury",
+      "authors": "",
       "year": 2024,
-      "venue": "arXiv (gr-qc)",
-      "url": "https://arxiv.org/abs/2406.01318v1",
-      "pdf_url": "https://arxiv.org/pdf/2406.01318v1",
+      "venue": "",
+      "url": "https://arxiv.org/abs/2406.01318",
+      "pdf_url": "",
       "doi": "10.48550/ARXIV.2406.01318",
       "citations": 0,
       "source": [
-        "arxiv",
         "orcid"
       ]
     },
