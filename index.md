@@ -46,6 +46,7 @@ show_header_phrase: false
 </div>
 
 ## Recent News
+- **April 2026** — Released [**PHANTOM**](https://github.com/matc-thaher/PHANTOM) (*Profile and Halo Analysis for Numerous Theoretical dark Matter Observables*), an open-source MATLAB toolbox for dark matter halo profiles, concentration–mass relations, suppression functions, and fuzzy dark matter soliton core modeling. The installable toolbox package is available on the [releases page](https://github.com/matc-thaher/PHANTOM/releases/latest).
 - **September 2025** — Became a Qiskit Advocate of IBM!
 - **August 2025** — Completed a summer program on Quantum Computing and Quantum Information conducted by IBM!
 - **May 2025** — Launched this personal website!
