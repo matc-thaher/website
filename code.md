@@ -11,8 +11,23 @@ show_header_phrase: false
 <p>Links to my research code and tools. “Featured” highlights a few active projects; the full list below updates automatically from GitHub.</p>
 
 <!-- ========= Featured (curate these) ========= -->
+<!-- ========= Featured (curate these) ========= -->
 <h2>Featured</h2>
 <div class="project-grid">
+
+  <article class="project-card">
+    <h3><a href="https://github.com/matc-thaher/PHANTOM" target="_blank" rel="noopener">PHANTOM</a></h3>
+    <p>Profile and Halo Analysis for Numerous Theoretical dark Matter Observables — an open-source MATLAB toolbox for NFW/Einasto halo profiles, concentration–mass relations, FDM soliton core physics, and WDM/FDM suppression functions.</p>
+    <div class="project-meta">
+      <span class="tag">MATLAB</span>
+      <span class="tag">Dark Matter</span>
+      <span class="tag">Astrophysics</span>
+      <a class="badge-link" href="https://github.com/matc-thaher/PHANTOM" target="_blank" rel="noopener">Repo →</a>
+      <a class="badge-link" href="https://github.com/matc-thaher/PHANTOM/releases/latest" target="_blank" rel="noopener">v1.0 ↓</a>
+      <a class="badge-link" href="https://doi.org/10.5281/zenodo.19700919" target="_blank" rel="noopener">DOI →</a>
+    </div>
+  </article>
+
   <article class="project-card">
     <h3><a href="https://github.com/matc-thaher/dark-matter-simulations" target="_blank" rel="noopener">Dark Matter Simulations</a></h3>
     <p>Scripts and analysis pipelines to explore ultralight/FDM cores, core–halo scaling, and rotation-curve fits.</p>
@@ -23,6 +38,7 @@ show_header_phrase: false
     </div>
   </article>
 
+  <!-- Gravitational-wave card commented out — re-enable when work resumes
   <article class="project-card">
     <h3><a href="https://github.com/matc-thaher/gravitational-wave-analysis" target="_blank" rel="noopener">Gravitational-Wave Analysis</a></h3>
     <p>Adaptive spline fitting + wavelet shrinkage for glitch suppression; reproducible workflows on open LIGO/Virgo data.</p>
@@ -32,8 +48,9 @@ show_header_phrase: false
       <a class="badge-link" href="https://github.com/matc-thaher/gravitational-wave-analysis" target="_blank" rel="noopener">Repo →</a>
     </div>
   </article>
-</div>
+  -->
 
+</div>
 <!-- ========= All repositories (auto) ========= -->
 <h2>All repositories</h2>
 
