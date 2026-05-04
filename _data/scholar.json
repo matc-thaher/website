@@ -1,6 +1,19 @@
 {
-  "updated": "2026-04-27T06:41:21.378789Z",
+  "updated": "2026-05-04T06:51:54.424225Z",
   "publications": [
+    {
+      "title": "PHANTOM: Profile and Halo Analysis for Numerous Theoretical dark Matter Observables",
+      "authors": "",
+      "year": 2026,
+      "venue": "Zenodo",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.19700920",
+      "pdf_url": "",
+      "doi": "10.5281/ZENODO.19700920",
+      "citations": 0,
+      "source": [
+        "orcid"
+      ]
+    },
     {
       "title": "Influence of Yttrium(Y) on properties of Lanthanum Cobalt Oxides",
       "authors": "Mohammad Abu Thaher Chowdhury, Shumsun Naher Begum",
