@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-27T07:31:05.725091Z",
+  "updated": "2026-05-04T07:44:13.195512Z",
   "repos": [
     {
       "name": "website",
@@ -8,17 +8,25 @@
       "language": "CSS",
       "topics": [],
       "stargazers_count": 0,
-      "updated_at": "2026-04-27T06:41:22Z",
+      "updated_at": "2026-05-04T06:51:55Z",
       "fork": false
     },
     {
       "name": "PHANTOM",
       "html_url": "https://github.com/matc-thaher/PHANTOM",
-      "description": "Profile & Halo Analysis for Nonstandard/Theoretical Dark Matter",
+      "description": "PHANTOM: A MATLAB toolbox for dark matter halo profile analysis, including NFW/Einasto/Burkert profiles, concentration–mass relations, FDM suppression factors, and core-halo mass relations",
       "language": "MATLAB",
-      "topics": [],
+      "topics": [
+        "astrophysics",
+        "concentration",
+        "dark-matter",
+        "halo-profiles",
+        "halo-properties",
+        "soliton",
+        "suppression-factor"
+      ],
       "stargazers_count": 0,
-      "updated_at": "2026-04-25T03:34:36Z",
+      "updated_at": "2026-05-03T17:16:32Z",
       "fork": false
     },
     {
