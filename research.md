@@ -68,43 +68,7 @@ show_header_phrase: false
 
 <!-- ========== Topic 2: media left | text right (.flip) ========== -->
 <section id="galaxy-formation" class="research-section flip">
-  <div class="content">
-    <h2>Galaxy Formation and Evolution</h2>
-
-    <p>
-  Galaxy formation began as tiny quantum density fluctuations in the early universe grew under
-  gravity into dark matter halos, which then provided potential wells for baryonic gas to
-  collapse, cool, and form stars
-  <a href="https://doi.org/10.1093/mnras/183.3.341" target="_blank" rel="noopener">
-  (White &amp; Rees, 1978)</a>. This hierarchical assembly process, in which smaller structures
-  merge over billions of years to produce larger ones, accounts for the broad diversity of
-  galaxy morphologies observed today. Yet important questions about the initial conditions and
-  the feedback processes that shape a galaxy's final structure remain open
-  <a href="https://doi.org/10.1146/annurev-astro-082812-140951" target="_blank" rel="noopener">
-  (Somerville &amp; Davé, 2015)</a>.
-</p>
-
-<p>
-  Dwarf galaxies, which span roughly 10<sup>7</sup> to 10<sup>10</sup> solar masses in stellar
-  content, are the most numerous galaxies in the universe and serve as the primary testing
-  ground for dark matter models on small scales. Cold dark matter simulations predict far more
-  low-mass satellite halos than are observed around hosts like the Milky Way — the missing
-  satellites problem
-  <a href="https://doi.org/10.1146/annurev-astro-091916-055313" target="_blank" rel="noopener">
-  (Bullock &amp; Boylan-Kolchin, 2017)</a> — and they predict cuspy central density profiles
-  that observations of dwarf spheroidals favour as flat cores, the so-called cusp-core problem
-  <a href="https://doi.org/10.1088/0004-637X/742/1/20" target="_blank" rel="noopener">
-  (Walker &amp; Pe&ntilde;arrubia, 2011)</a>. My current project uses FDM cosmological
-  simulations, run with GAMER-2 (a visualization of the FDM simulation is shown alongside) and GIZMO, to study halos in the mass range
-  10<sup>9</sup>-10<sup>10</sup> M<sub>&#9737;</sub>. Initial conditions are generated with
-  MUSIC and axionCAMB, and dark matter halos are identified and characterised with the
-  phase-space halo finder Rockstar. By comparing FDM and N-body (CDM-like) runs at matched
-  resolution in this dwarf-galaxy regime, I aim to quantify the degree to which quantum
-  pressure and soliton cores relieve the small-scale tensions that &Lambda;CDM cannot resolve.
-</p>
-  </div>
-
-  <div class="media">
+    <div class="media">
     <!-- IMAGE OPTION (default) -->
     <figure style="margin:0 0 12px 0; display:block;">
       <img src="{{ '/assets/Images/galaxy_formation1.webp' | relative_url }}" alt="Galaxy formation schematic 1" loading="lazy">
@@ -146,6 +110,44 @@ show_header_phrase: false
     </iframe>
     -->
   </div>
+
+  
+  <div class="content">
+    <h2>Galaxy Formation and Evolution</h2>
+
+    <p>
+  Galaxy formation began as tiny quantum density fluctuations in the early universe grew under
+  gravity into dark matter halos, which then provided potential wells for baryonic gas to
+  collapse, cool, and form stars
+  <a href="https://doi.org/10.1093/mnras/183.3.341" target="_blank" rel="noopener">
+  (White &amp; Rees, 1978)</a>. This hierarchical assembly process, in which smaller structures
+  merge over billions of years to produce larger ones, accounts for the broad diversity of
+  galaxy morphologies observed today. Yet important questions about the initial conditions and
+  the feedback processes that shape a galaxy's final structure remain open
+  <a href="https://doi.org/10.1146/annurev-astro-082812-140951" target="_blank" rel="noopener">
+  (Somerville &amp; Davé, 2015)</a>.
+</p>
+
+<p>
+  Dwarf galaxies, which span roughly 10<sup>7</sup> to 10<sup>10</sup> solar masses in stellar
+  content, are the most numerous galaxies in the universe and serve as the primary testing
+  ground for dark matter models on small scales. Cold dark matter simulations predict far more
+  low-mass satellite halos than are observed around hosts like the Milky Way — the missing
+  satellites problem
+  <a href="https://doi.org/10.1146/annurev-astro-091916-055313" target="_blank" rel="noopener">
+  (Bullock &amp; Boylan-Kolchin, 2017)</a> — and they predict cuspy central density profiles
+  that observations of dwarf spheroidals favour as flat cores, the so-called cusp-core problem
+  <a href="https://doi.org/10.1088/0004-637X/742/1/20" target="_blank" rel="noopener">
+  (Walker &amp; Pe&ntilde;arrubia, 2011)</a>. My current project uses FDM cosmological
+  simulations, run with GAMER-2 (a visualization of the FDM simulation is shown alongside) and GIZMO, to study halos in the mass range
+  10<sup>9</sup>-10<sup>10</sup> M<sub>&#9737;</sub>. Initial conditions are generated with
+  MUSIC and axionCAMB, and dark matter halos are identified and characterised with the
+  phase-space halo finder Rockstar. By comparing FDM and N-body (CDM-like) runs at matched
+  resolution in this dwarf-galaxy regime, I aim to quantify the degree to which quantum
+  pressure and soliton cores relieve the small-scale tensions that &Lambda;CDM cannot resolve.
+</p>
+  </div>
+
 </section>
 
 <!-- ========== Topic 3: text left | media right ========== -->
