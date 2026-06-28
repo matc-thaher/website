@@ -95,7 +95,7 @@ show_header_phrase: false
   that observations of dwarf spheroidals favour as flat cores, the so-called cusp-core problem
   <a href="https://doi.org/10.1088/0004-637X/742/1/20" target="_blank" rel="noopener">
   (Walker &amp; Pe&ntilde;arrubia, 2011)</a>. My current project uses FDM cosmological
-  simulations, run with GAMER-2 and GIZMO, to study halos in the mass range
+  simulations, run with GAMER-2 (a visualization of the FDM simulation is shown alongside) and GIZMO, to study halos in the mass range
   10<sup>9</sup>-10<sup>10</sup> M<sub>&#9737;</sub>. Initial conditions are generated with
   MUSIC and axionCAMB, and dark matter halos are identified and characterised with the
   phase-space halo finder Rockstar. By comparing FDM and N-body (CDM-like) runs at matched
