@@ -389,14 +389,14 @@ footer a:hover { color: #cfe1ff; }
   align-items: start;
 }
 .research-section .content{ grid-column: 1; min-width: 0; overflow-wrap: anywhere; }
-.research-section .media{   grid-column: 2; }
+.research-section .media{   grid-column: 2; align-self: start; }
 
 /* Flipped rows: media | text (media stays narrow) */
 .research-section.flip{
   grid-template-columns: clamp(280px, 32vw, 360px) minmax(0, 1fr);
 }
 .research-section.flip .content{ grid-column: 2; min-width: 0; overflow-wrap: anywhere; }
-.research-section.flip .media{   grid-column: 1; }
+.research-section.flip .media{   grid-column: 1; align-self: start; }
 
 /* Optional: shorter thumbnails on flipped rows */
 .research-section.flip .media img{ aspect-ratio: 5 / 4; object-fit: cover; }
