@@ -126,7 +126,8 @@ show_header_phrase: false
 
     <!-- Local video -->
     
-    <video controls preload="metadata" poster="{{ '/assets/Images/galaxy_formation1.webp' | relative_url }}" style="margin-top:12px">
+    <video controls preload="metadata" poster="{{ '/assets/Images/galaxy_formation1.webp' | relative_url }}" 
+        style="margin-top:12px; width:100%; max-width:100%; display:block; aspect-ratio:16/9;">
       <source src="{{ '/assets/Videos/Data_Proj_z_density_x9.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
