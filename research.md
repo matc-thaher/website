@@ -114,7 +114,7 @@ show_header_phrase: false
       </figcaption>
     </figure>
 
-    <figure style="margin:0 0 12px 0">
+    <figure style="margin:0">
       <img src="{{ '/assets/Images/galaxy_formation2.webp' | relative_url }}" alt="Galaxy formation schematic 2" loading="lazy">
       <figcaption class="badge" style="display:inline-block; margin-top:6px;">
         Formation processes — source:
