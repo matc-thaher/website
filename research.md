@@ -114,7 +114,7 @@ show_header_phrase: false
       </figcaption>
     </figure>
 
-    <figure style="margin:0">
+    <figure style="margin:0 0 12px 0">
       <img src="{{ '/assets/Images/galaxy_formation2.webp' | relative_url }}" alt="Galaxy formation schematic 2" loading="lazy">
       <figcaption class="badge" style="display:inline-block; margin-top:6px;">
         Formation processes — source:
@@ -125,12 +125,12 @@ show_header_phrase: false
     <!-- VIDEO OPTIONS (uncomment ONE when you have media) -->
 
     <!-- Local video -->
-    <!--
+    
     <video controls preload="metadata" poster="{{ '/assets/Images/galaxy_formation1.webp' | relative_url }}" style="margin-top:12px">
-      <source src="{{ '/assets/videos/galaxy_overview.mp4' | relative_url }}" type="video/mp4">
+      <source src="{{ '/assets/Videos/Data_Proj_z_density_x9.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    -->
+    
 
     <!-- YouTube/Vimeo embed -->
     <!--
