@@ -16,12 +16,35 @@ show_header_phrase: false
     <h2>Dark Matter</h2>
 
     <p>
-      Dark matter (DM) is a mysterious and unseen matter that makes up approximately 27% of the universe's mass-energy content. It doesn't emit, absorb, or reflect light, making it invisible and detectable only through its gravitational effects on visible matter, such as galaxies and galaxy clusters. The first assumption of dark matter arose in the 1930s when astronomer <a href="https://ned.ipac.caltech.edu/level5/March17/Zwicky/translation.pdf" target="_blank" rel="noopener">Fritz Zwicky</a> observed that galaxies in the Coma Cluster were moving faster than expected based on the visible matter present. This led to the hypothesis that unseen "dark matter" was exerting extra gravitational pull to explain the high velocities. The galactic rotation curve problem in Babcock's observation proved that the stars move too fast to be bound by Newtonian gravity if all matter is visible. Other observations and work have demonstrated that DM exists. However, the nature of DM is still a mystery. How does it interact amongst DM particles and with other baryonic particles? Even if it does interact, which type of interaction is it? If a DM particle exists, does it have a dual nature like a photon?
-    </p>
+  Dark matter (DM) is an unseen component of the universe that accounts for approximately 27%
+  of its total mass-energy content. It neither emits nor absorbs light, making it detectable
+  solely through its gravitational influence on visible structures such as galaxies and galaxy
+  clusters. The first indication of dark matter emerged in the 1930s, when astronomer
+  <a href="https://ned.ipac.caltech.edu/level5/March17/Zwicky/translation.pdf"
+     target="_blank" rel="noopener">Fritz Zwicky</a> found that galaxies in the Coma Cluster
+  moved far faster than the visible mass could explain. Subsequent work on galactic rotation
+  curves — most famously by Rubin and Ford — confirmed that stars at the outskirts of galaxies
+  orbit too rapidly to be bound by Newtonian gravity if only luminous matter is present. Lensing
+  observations, the cosmic microwave background (CMB), and the Bullet Cluster together place the
+  existence of dark matter on firm empirical ground.
+</p>
 
-    <p>
-      Despite decades of research, it has not been directly detected through any known particles or interactions outside of its gravitational effects. This discrepancy challenges existing particle physics and cosmology models, leading to ongoing debates and searches for alternative explanations. Until now, the most successful theory is Lambda—Cold Dark Matter (ΛCDM) theory, which can not explain the small-scale problems that arose from the theoretical model, like the missing satellite problem, too-big-to-fail problem, and cusp-core problem. There are other models, such as self-interacting dark matter (SIDM), fuzzy dark matter (FDM), and warm dark matter (WDM). I am currently investigating FDM, which is also known as Ultralight Dark Matter (UDM), Bose-Einstein condensate Dark Matter (BECDM), quantum Dark Matter, and Scalar Field Dark Matter (SFDM). This model may help solve the small-scale cosmology problem that Lambd-CDM can not solve.
-    </p>
+<p>
+  Despite this observational consensus, the particle nature of dark matter remains unknown. No
+  confirmed direct detection has been made through any non-gravitational channel. The standard
+  theoretical framework, Lambda-Cold Dark Matter (&Lambda;CDM), reproduces large-scale structure
+  with impressive accuracy yet faces persistent tensions on small scales: the missing satellite
+  problem, the too-big-to-fail problem, and the cusp-core problem. These tensions motivate
+  alternatives such as self-interacting dark matter (SIDM), warm dark matter (WDM), and Fuzzy
+  Dark Matter (FDM). My current research focuses on FDM, also known as ultralight dark matter
+  (UDM), Bose-Einstein condensate dark matter (BECDM), and scalar field dark matter (SFDM). In
+  this model the dark matter particle is an ultralight boson with a mass of order
+  10<sup>-22</sup> eV/c<sup>2</sup>, giving it a de Broglie wavelength on kiloparsec scales and
+  producing wave-like quantum phenomena inside dark matter halos. On large scales FDM recovers
+  the &Lambda;CDM predictions, while on small scales quantum pressure suppresses low-mass halo
+  formation and generates a distinct solitonic core at each halo centre — a signature my
+  simulation work aims to characterise in the dwarf-galaxy mass range.
+</p>
   </div>
 
   <div class="media">
@@ -46,15 +69,39 @@ show_header_phrase: false
 <!-- ========== Topic 2: media left | text right (.flip) ========== -->
 <section id="galaxy-formation" class="research-section flip">
   <div class="content">
-    <h2>Galaxy Formation</h2>
+    <h2>Galaxy Formation and Evolution</h2>
 
     <p>
-      Galaxy formation is a complex process that began shortly after the Big Bang and continues to shape the universe today. Galaxies are believed to have formed from tiny density fluctuations in the early cosmos, which expanded into enormous formations of gas, dark matter, and stars due to gravity. The formation of dark matter halos due to these early fluctuations gave baryonic matter, or "normal" matter. This gravitational anchor helped it collapse and give rise to the first stars and galaxies <a href="https://doi.org/10.1093/mnras/183.3.341" target="_blank" rel="noopener">(White & Rees, 1978)</a>. The variety of galaxy types we see today, from the graceful spirals to the more amorphous ellipticals, results from smaller galaxies merging over billions of years. According to <a href="https://doi.org/10.1146/annurev-astro-082812-140951" target="_blank" rel="noopener">Somerville and Davé (2015)</a>, there are still important concerns regarding how initial conditions and subsequent interactions influence a galaxy's final structure, even after a great deal of observational and simulation-based research.
-    </p>
+  Galaxy formation began as tiny quantum density fluctuations in the early universe grew under
+  gravity into dark matter halos, which then provided potential wells for baryonic gas to
+  collapse, cool, and form stars
+  <a href="https://doi.org/10.1093/mnras/183.3.341" target="_blank" rel="noopener">
+  (White &amp; Rees, 1978)</a>. This hierarchical assembly process, in which smaller structures
+  merge over billions of years to produce larger ones, accounts for the broad diversity of
+  galaxy morphologies observed today. Yet important questions about the initial conditions and
+  the feedback processes that shape a galaxy's final structure remain open
+  <a href="https://doi.org/10.1146/annurev-astro-082812-140951" target="_blank" rel="noopener">
+  (Somerville &amp; Davé, 2015)</a>.
+</p>
 
-    <p>
-      Compared to larger galaxies like the Milky Way, which has hundreds of billion stars, dwarf galaxies are the smallest and most common galaxies in the universe, with as few as one billion stars. These small galaxies are intriguing because they serve as "building blocks" for larger galaxies and provide information about the distribution of dark matter and galaxy formation. However, there are several difficulties in comprehending dwarf galaxies, especially in relation to the distribution and amount of dark matter they contain. Observations reveal that the distribution of dark matter in dwarf galaxies frequently deviates from predictions. The "core-cusp" problem, in which dark matter should be densely packed in the center (a "cusp") but instead appears more spread out (a "core") <a href="https://doi.org/10.1088/0004-637X/742/1/20" target="_blank" rel="noopener">(Walker & Peñarrubia, 2011)</a>, is one of the most contentious issues. Additionally, there are still unanswered questions regarding the nature of dark matter and the physics governing galaxy formation due to the "missing satellites problem"—the existence of fewer dwarf galaxies in the vicinity of larger galaxies than simulations predict <a href="https://doi.org/10.1146/annurev-astro-091916-055313" target="_blank" rel="noopener">(Bullock & Boylan-Kolchin, 2017)</a>. My current work can also shed some light on these problems. For large structures in the universe, FDM produces the same conclusion as the ΛCDM model, and it may alleviate these issues on a small scale.
-    </p>
+<p>
+  Dwarf galaxies, which span roughly 10<sup>7</sup> to 10<sup>10</sup> solar masses in stellar
+  content, are the most numerous galaxies in the universe and serve as the primary testing
+  ground for dark matter models on small scales. Cold dark matter simulations predict far more
+  low-mass satellite halos than are observed around hosts like the Milky Way — the missing
+  satellites problem
+  <a href="https://doi.org/10.1146/annurev-astro-091916-055313" target="_blank" rel="noopener">
+  (Bullock &amp; Boylan-Kolchin, 2017)</a> — and they predict cuspy central density profiles
+  that observations of dwarf spheroidals favour as flat cores, the so-called cusp-core problem
+  <a href="https://doi.org/10.1088/0004-637X/742/1/20" target="_blank" rel="noopener">
+  (Walker &amp; Pe&ntilde;arrubia, 2011)</a>. My current project uses FDM cosmological
+  simulations, run with GAMER-2 and GIZMO, to study halos in the mass range
+  10<sup>9</sup>-10<sup>10</sup> M<sub>&#9737;</sub>. Initial conditions are generated with
+  MUSIC and axionCAMB, and dark matter halos are identified and characterised with the
+  phase-space halo finder Rockstar. By comparing FDM and N-body (CDM-like) runs at matched
+  resolution in this dwarf-galaxy regime, I aim to quantify the degree to which quantum
+  pressure and soliton cores relieve the small-scale tensions that &Lambda;CDM cannot resolve.
+</p>
   </div>
 
   <div class="media">
@@ -124,6 +171,40 @@ show_header_phrase: false
 </section>
 
 <p>More details on specific projects can be found in my <a href="{{ '/code/' | relative_url }}">Code Projects</a> section.</p>
+
+<!-- ========== Software ========== -->
+<section id="software" class="research-section">
+  <div class="content">
+    <h2>Software</h2>
+
+    <h3>PHANTOM</h3>
+    <p>
+      A recurring challenge in dark matter research is that validated, native implementations
+      of halo statistics and density profile models are largely absent from the MATLAB and
+      Octave ecosystems, despite widespread use of these environments in astrophysics pipelines.
+      To address this, I have published
+      <a href="https://arxiv.org/abs/2606.19104" target="_blank" rel="noopener">PHANTOM</a>
+      (Profile and Halo Analysis for Numerous Theoretical dark Matter Observables), an
+      open-source MATLAB toolbox and Octave package that connects linear density field
+      statistics to dark matter halo observables. PHANTOM can also run in Python through an
+      Octave kernel, making it accessible across computing environments. The code is released
+      under the MIT licence and is publicly available on
+      <a href="https://github.com/matc-thaher/PHANTOM" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+
+    <p>
+      The package combines a flexible cosmology module with linear power spectrum, variance,
+      and correlation function solvers alongside a halo module covering mass functions, linear
+      bias, density profiles, and concentration-mass relations for cold, warm, and fuzzy dark
+      matter scenarios. All core routines are cross-validated against the Python packages
+      colossus, hmf, and halomod, with sub-percent agreement across shared models including
+      distances, power spectra, halo mass functions, and density profiles. From a single
+      cosmology structure object, users can obtain field statistics, halo statistics, and halo
+      observables — including enclosed mass, circular velocity, projected density, and lensing
+      convergence — on arbitrary user-defined grids. Full documentation and usage examples are
+      on my <a href="{{ '/code/' | relative_url }}">Code Projects</a> page, or read the paper
+      at <a href="https://arxiv.org/abs/2606.19104" target="_blank" rel="noopener">arXiv:2606.19104</a>.
+    </p>
 
 <!-- Quote moved to the bottom only -->
 <aside class="prose quote-callout">
