@@ -19,6 +19,7 @@ show_header_phrase: false
   - **Focus:** Dark matter · Galaxy formation · GW data analysis
   - **Location:** Troy, New York, USA
   - **Contact:** [Get in touch]({{ '/contact/' | relative_url }})
+  - **CV:** [Download CV]({{ '/assets/CV.pdf' | relative_url }})
 
   <div class="socials">
     <a href="https://github.com/matc-thaher" aria-label="GitHub" rel="me" target="_blank">
