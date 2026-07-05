@@ -20,6 +20,7 @@ show_header_phrase: false
     <a class="button" href="{{ '/research/' | relative_url }}">View Research</a>
     <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
     <a class="button" href="{{ '/code/' | relative_url }}">Code</a>
+    <a class="button" href="{{ '/assets/CV.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
   </div>
   </div>
 
