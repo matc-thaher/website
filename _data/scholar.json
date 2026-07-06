@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T09:12:19.833655Z",
+  "updated": "2026-07-06T08:33:26.191409Z",
   "publications": [
     {
       "title": "PHANTOM: Profile and Halo Analysis for Numerous Theoretical dark Matter Observables",
@@ -16,27 +16,42 @@
     },
     {
       "title": "PHANTOM: A MATLAB and Octave Toolbox Connecting Linear Field Statistics to Dark Matter Halo Observables",
-      "authors": "",
+      "authors": "Mohammad Abu Thaher Chowdhury",
       "year": 2026,
-      "venue": "Open Journal of Astrophysics",
-      "url": "https://arxiv.org/abs/2606.19104",
-      "pdf_url": "",
+      "venue": "arXiv (astro-ph.CO)",
+      "url": "https://arxiv.org/abs/2606.19104v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19104v1",
       "doi": "10.48550/ARXIV.2606.19104",
       "citations": 0,
       "source": [
+        "arxiv",
         "orcid"
       ]
     },
     {
-      "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational Wave Data Analysis: A Brief Review",
-      "authors": "",
+      "title": "Influence of Yttrium(Y) on properties of Lanthanum Cobalt Oxides",
+      "authors": "Mohammad Abu Thaher Chowdhury, Shumsun Naher Begum",
       "year": 2024,
-      "venue": "arXiv e-prints",
-      "url": "",
-      "pdf_url": "",
+      "venue": "arXiv (cond-mat.mtrl-sci)",
+      "url": "https://arxiv.org/abs/2408.15798v1",
+      "pdf_url": "https://arxiv.org/pdf/2408.15798v1",
+      "doi": "",
+      "citations": 0,
+      "source": [
+        "arxiv"
+      ]
+    },
+    {
+      "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational Wave Data Analysis: A Brief Review",
+      "authors": "Mohammad Abu Thaher Chowdhury",
+      "year": 2024,
+      "venue": "arXiv (gr-qc)",
+      "url": "https://arxiv.org/abs/2406.01318v1",
+      "pdf_url": "https://arxiv.org/pdf/2406.01318v1",
       "doi": "10.48550/arXiv.2406.01318",
       "citations": 0,
       "source": [
+        "arxiv",
         "orcid"
       ]
     },
