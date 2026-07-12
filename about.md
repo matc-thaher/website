@@ -15,7 +15,7 @@ show_header_phrase: false
   </figure>
 
   - **Institution:** Rensselaer Polytechnic Institute (RPI)
-  - **Advisor:** [Asst. Prof. Victor Robles Sanchez](https://pages.github.rpi.edu/roblev/vrobles/)
+  - **Department:** Physics, Applied Physics, and Astronomy
   - **Focus:** Dark matter · Galaxy formation · GW data analysis
   - **Location:** Troy, New York, USA
   - **Contact:** [Get in touch]({{ '/contact/' | relative_url }})
