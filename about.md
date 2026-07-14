@@ -34,8 +34,7 @@ show_header_phrase: false
   <!-- Right: name + bio + research interests -->
    <div>
     <h1>Mohammad Abu Thaher Chowdhury</h1>
-    <p>I am currently a PhD student at <a href="https://www.rpi.edu/" target="_blank" rel="noopener">RPI</a> in Troy, New York, USA, working as a graduate research assistant under the guidance of
-      <a href="https://pages.github.rpi.edu/roblev/vrobles/" target="_blank" rel="noopener">Asst. Prof. Victor Robles Sanchez</a>. During my PhD, my primary focus is on understanding the nature of
+    <p>I am currently a PhD student at <a href="https://www.rpi.edu/" target="_blank" rel="noopener">RPI</a> in Troy, New York, USA, working as a graduate research assistant. During my PhD, my primary focus is on understanding the nature of
       <a href="https://science.nasa.gov/universe/overview/building-blocks/#dark-matter" target="_blank" rel="noopener">Dark Matter</a>, galaxy formation, and evolution through theoretical and computational research.
     </p>
     <p>Before my PhD, I earned my Master’s degree in Physics from the University of Texas Rio Grande Valley (<a href="https://www.utrgv.edu/" target="_blank" rel="noopener">UTRGV</a>) in 2022, where I worked with
