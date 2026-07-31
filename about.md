@@ -51,7 +51,7 @@ show_header_phrase: false
 </section>
 
 ## Education
-- **Ph.D., Physics** — Rensselaer Polytechnic Institute (in progress) · Advisor: Victor Robles Sanchez  
+- **Ph.D., Physics** — Rensselaer Polytechnic Institute (in progress)  
 - **M.S., Physics** — University of Texas Rio Grande Valley, 2022 · Thesis linked above  
 - **M.S., Physics** — Shahjalal University of Science and Technology, 2017  
 - **B.Sc., Physics** — Shahjalal University of Science and Technology, 2015  
