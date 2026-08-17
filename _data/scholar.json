@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10T05:24:40.964494Z",
+  "updated": "2026-08-17T04:53:40.104208Z",
   "publications": [
     {
       "title": "PHANTOM: Profile and Halo Analysis for Numerous Theoretical dark Matter Observables",
@@ -25,8 +25,7 @@
       "citations": 0,
       "source": [
         "arxiv",
-        "orcid",
-        "scholar"
+        "orcid"
       ]
     },
     {
@@ -39,8 +38,7 @@
       "doi": "",
       "citations": 0,
       "source": [
-        "arxiv",
-        "scholar"
+        "arxiv"
       ]
     },
     {
@@ -51,65 +49,24 @@
       "url": "https://arxiv.org/abs/2406.01318v1",
       "pdf_url": "https://arxiv.org/pdf/2406.01318v1",
       "doi": "10.48550/arXiv.2406.01318",
-      "citations": 2,
+      "citations": 0,
       "source": [
         "arxiv",
-        "orcid",
-        "scholar"
+        "orcid"
       ]
     },
     {
       "title": "Glitch subtraction from gravitational wave data using adaptive spline fitting",
-      "authors": "Soumya D Mohanty and Mohammad AT Chowdhury",
+      "authors": "",
       "year": 2023,
       "venue": "Class. Quantum Grav.",
       "url": "https://doi.org/10.1088/1361-6382/acd0fe",
       "pdf_url": "",
       "doi": "10.1088/1361-6382/acd0fe",
-      "citations": 21,
+      "citations": 0,
       "source": [
         "crossref",
-        "orcid",
-        "scholar"
-      ]
-    },
-    {
-      "title": "Glitch Estimation and Removal Using Adaptive Spline Fitting and Wavelet Shrinkage on the Gravitational Wave Data",
-      "authors": "Mohammad Abu Thaher Chowdhury",
-      "year": 2022,
-      "venue": "",
-      "url": "https://search.proquest.com/openview/7f68a2c9fc2972f4eb08e0d1a8fcbd2e/1?pq-origsite=gscholar&cbl=18750&diss=y",
-      "pdf_url": "",
-      "doi": "",
-      "citations": 0,
-      "source": [
-        "scholar"
-      ]
-    },
-    {
-      "title": "Application of adaptive spline regression and wavelet based method on glitches in gravitational wave data",
-      "authors": "Mohammad Abu Thaher A Chowdhury and Soumya D Mohanty",
-      "year": 2022,
-      "venue": "",
-      "url": "https://meetings-archive.aps.org/tsf/2022/f05/5/",
-      "pdf_url": "",
-      "doi": "",
-      "citations": 1,
-      "source": [
-        "scholar"
-      ]
-    },
-    {
-      "title": "Data-driven Data-fitting: Adaptive Spline Fitting and its Applications",
-      "authors": "Thomas Cruz and MAT Chowdhury and Soumya D Mohanty",
-      "year": 2021,
-      "venue": "",
-      "url": "https://repositories.lib.utexas.edu/items/fd04b32c-04dd-4d45-ad74-d6f5b4f2b174",
-      "pdf_url": "",
-      "doi": "",
-      "citations": 0,
-      "source": [
-        "scholar"
+        "orcid"
       ]
     },
     {
