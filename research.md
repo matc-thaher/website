@@ -211,6 +211,33 @@ show_header_phrase: false
       at <a href="https://arxiv.org/abs/2606.19104" target="_blank" rel="noopener">arXiv:2606.19104</a>.
     </p>
 
+
+    <h3>Gravitational-Wave Glitch Identification and Subtraction</h3>
+
+    <p>
+      Transient non-astrophysical noise artifacts, commonly called glitches, can
+      obscure gravitational-wave signals and reduce the sensitivity of
+      interferometric observatories such as LIGO and Virgo. To support the study
+      of these artifacts, I developed an open-source research repository for
+      gravitational-wave glitch identification, estimation, and subtraction. The
+      repository contains analysis code related to adaptive spline fitting and
+      wavelet-based methods for modelling non-Gaussian transient noise in
+      gravitational-wave strain data.
+    </p>
+
+    <p>
+      The work is connected to my master's thesis, which examined adaptive spline
+      fitting and wavelet shrinkage for glitch removal, including applications to
+      several LIGO glitch classes and to a loud glitch overlapping GW170817. The
+      repository is publicly available on
+      <a href="https://github.com/matc-thaher/GW_Glitch_Identification_Subtraction"
+         target="_blank" rel="noopener">GitHub</a>, with an archived version on
+      <a href="https://zenodo.org/records/22165032"
+         target="_blank" rel="noopener">Zenodo</a>. Related code, documentation,
+      and other research projects are listed on my
+      <a href="{{ '/code/' | relative_url }}">Code Projects</a> page.
+    </p>
+
 <!-- Quote moved to the bottom only -->
 <aside class="prose quote-callout">
   <em>{{ page.header_phrase }}</em>
