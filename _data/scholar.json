@@ -1,14 +1,14 @@
 {
-  "updated": "2026-08-24T04:55:40.634755Z",
+  "updated": "2026-08-31T10:46:04.645835Z",
   "publications": [
     {
       "title": "PHANTOM: Profile and Halo Analysis for Numerous Theoretical dark Matter Observables",
       "authors": "",
       "year": 2026,
       "venue": "Zenodo",
-      "url": "https://zenodo.org/doi/10.5281/zenodo.19700920",
+      "url": "",
       "pdf_url": "",
-      "doi": "10.5281/ZENODO.19700920",
+      "doi": "10.5281/zenodo.19700919",
       "citations": 0,
       "source": [
         "orcid"
@@ -25,6 +25,19 @@
       "citations": 0,
       "source": [
         "arxiv",
+        "orcid"
+      ]
+    },
+    {
+      "title": "Automated identification and subtraction of gravitational-wave glitches using boundary refinement: code and data",
+      "authors": "",
+      "year": 2026,
+      "venue": "Zenodo",
+      "url": "",
+      "pdf_url": "",
+      "doi": "10.5281/zenodo.22165031",
+      "citations": 0,
+      "source": [
         "orcid"
       ]
     },
