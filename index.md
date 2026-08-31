@@ -56,45 +56,6 @@ astrophysics research and data-intensive technical roles.
   <a href="https://github.com/matc-thaher/GW_Glitch_Identification_Subtraction" target="_blank" rel="noopener">GW glitch analysis code</a>
 </p>
 
-## Gallery
-
-<div class="image-gallery">
-  <figure>
-    <img
-      src="{{ '/assets/Images/FDM_Halo1.png' | relative_url }}"
-      alt="Projected fuzzy dark matter halo density from a cosmological simulation"
-      loading="lazy">
-    <figcaption class="badge">
-      Fuzzy dark matter halo density field
-    </figcaption>
-  </figure>
-
-  <figure>
-    <video
-      controls
-      preload="metadata"
-      poster="{{ '/assets/Images/FDM_Halo1.png' | relative_url }}"
-      style="width:100%; display:block; aspect-ratio:16/9; object-fit:cover;">
-      <source
-        src="{{ '/assets/Videos/Data_Proj_y_density_x10.mp4' | relative_url }}"
-        type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <figcaption class="badge">
-      Fuzzy dark matter density evolution from a GAMER-2 simulation
-    </figcaption>
-  </figure>
-
-  <figure>
-    <img
-      src="{{ '/assets/Images/DM_ring_galxycluster.jpg' | relative_url }}"
-      alt="Ring galaxy cluster observed through gravitational lensing"
-      loading="lazy">
-    <figcaption class="badge">
-      Ring galaxy cluster
-    </figcaption>
-  </figure>
-</div>
 
 ## Recent News
 
