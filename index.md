@@ -76,7 +76,7 @@ astrophysics research and data-intensive technical roles.
       poster="{{ '/assets/Images/FDM_Halo1.png' | relative_url }}"
       style="width:100%; display:block; aspect-ratio:16/9; object-fit:cover;">
       <source
-        src="{{ '/assets/Videos/Data_Proj_z_density_x9.mp4' | relative_url }}"
+        src="{{ '/assets/Videos/Data_Proj_y_density_x10.mp4' | relative_url }}"
         type="video/mp4">
       Your browser does not support the video tag.
     </video>
