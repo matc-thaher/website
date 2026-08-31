@@ -47,6 +47,7 @@ show_header_phrase: false
 </div>
 
 ## Recent News
+- **August 2026** — Archived my open-source [gravitational-wave glitch identification and subtraction code](https://zenodo.org/records/22165032) on Zenodo.
 - **August 2026** - Earned IBM’s Road to Practitioner badge, recognizing advanced proficiency in quantum computing with Qiskit, including variational algorithms, quantum ML, and error‑mitigated, hardware‑efficient workflows.
 - **April 2026** — Released [**PHANTOM**](https://github.com/matc-thaher/PHANTOM) (*Profile and Halo Analysis for Numerous Theoretical dark Matter Observables*), an open-source MATLAB toolbox for dark matter halo profiles, concentration–mass relations, suppression functions, and fuzzy dark matter soliton core modeling. The installable toolbox package is available on the [releases page](https://github.com/matc-thaher/PHANTOM/releases/latest).
 - **September 2025** — Became a Qiskit Advocate of IBM!
