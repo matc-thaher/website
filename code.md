@@ -29,23 +29,41 @@ show_header_phrase: false
   </article>
 
   <article class="project-card">
-    <h3><a href="https://github.com/matc-thaher/dark-matter-simulations" target="_blank" rel="noopener">Dark Matter Simulations</a></h3>
-    <p>Scripts and analysis pipelines to explore ultralight/FDM cores, core–halo scaling, and rotation-curve fits.</p>
-    <div class="project-meta">
-      <span class="tag">Python</span>
-      <span class="tag">Astro</span>
-      <a class="badge-link" href="https://github.com/matc-thaher/dark-matter-simulations" target="_blank" rel="noopener">Repo →</a>
-    </div>
-  </article>
+    <h3>
+      <a href="https://github.com/matc-thaher/GW_Glitch_Identification_Subtraction"
+         target="_blank" rel="noopener">
+        GW Glitch Identification and Subtraction
+      </a>
+    </h3>
 
-  <!-- Gravitational-wave card commented out — re-enable when work resumes
-  <article class="project-card">
-    <h3><a href="https://github.com/matc-thaher/gravitational-wave-analysis" target="_blank" rel="noopener">Gravitational-Wave Analysis</a></h3>
-    <p>Adaptive spline fitting + wavelet shrinkage for glitch suppression; reproducible workflows on open LIGO/Virgo data.</p>
+  <p>
+      Gravitational-wave glitch-identification methods, together with plotting
+      and signal-injection code used to generate results and figures for the
+      accompanying research. The repository supports identification of a
+      glitch's location and extent in gravitational-wave strain data before
+      waveform estimation and subtraction.
+  </p>
+
+  <p>
+      Downstream waveform estimation and subtraction use the external
+      <a href="https://github.com/mohanty-sd/SHAPES"
+         target="_blank" rel="noopener">SHAPES</a> adaptive spline-fitting
+      package, which is not included in this repository. Wavelet shrinkage is
+      performed with the WaveShrink implementation in
+      <a href="https://github.com/carlosdelfino/Wavelab850"
+         target="_blank" rel="noopener">WaveLab</a>.
+  </p>
+
     <div class="project-meta">
-      <span class="tag">Python</span>
-      <span class="tag">Signal Proc</span>
-      <a class="badge-link" href="https://github.com/matc-thaher/gravitational-wave-analysis" target="_blank" rel="noopener">Repo →</a>
+      <span class="tag">MATLAB</span>
+      <span class="tag">Signal Processing</span>
+      <span class="tag">Gravitational Waves</span>
+      <a class="badge-link"
+         href="https://github.com/matc-thaher/GW_Glitch_Identification_Subtraction"
+         target="_blank" rel="noopener">Repo →</a>
+      <a class="badge-link"
+         href="https://zenodo.org/records/22165032"
+         target="_blank" rel="noopener">Zenodo →</a>
     </div>
   </article>
   -->
