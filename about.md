@@ -80,15 +80,20 @@ show_header_phrase: false
 
     <p>
       Before beginning my PhD, I earned an M.S. in Physics from the
-      <a href="https://www.utrgv.edu/" target="_blank" rel="noopener noreferrer">
+    `  <a href="https://www.utrgv.edu/" target="_blank" rel="noopener noreferrer">
         University of Texas Rio Grande Valley
       </a>
-      in 2022. My master's research focused on gravitational-wave data analysis,
-      particularly the identification, estimation, and subtraction of transient
-      non-astrophysical noise artifacts in detector data. My thesis,
+      in 2022. There, I worked with
+      <a href="https://scholar.google.com/citations?user=C2xWWFsAAAAJ&hl=en"
+         target="_blank" rel="noopener noreferrer">
+      Professor Soumya D. Mohanty
+    </a>
+      on gravitational-wave data analysis, with particular attention to the
+      identification, estimation, and subtraction of transient non-astrophysical
+      noise artifacts in detector data. My master's thesis,
       <em>"Glitch Estimation and Removal Using Adaptive Spline Fitting and
-      Wavelet Shrinkage on the Gravitational Wave Data"</em>, is available
-      through the
+      Wavelet Shrinkage on the Gravitational Wave Data"</em>, is available through
+      the
       <a href="https://www.proquest.com/docview/2801919094?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20%26%20Theses"
          target="_blank" rel="noopener noreferrer">
         ProQuest eTheses Repository
