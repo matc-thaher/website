@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T09:34:23.902148Z",
+  "updated": "2026-09-21T09:36:15.910518Z",
   "publications": [
     {
       "title": "PHANTOM: Profile and Halo Analysis for Numerous Theoretical dark Matter Observables",
@@ -16,56 +16,40 @@
     },
     {
       "title": "PHANTOM: A MATLAB and Octave Toolbox Connecting Linear Field Statistics to Dark Matter Halo Observables",
-      "authors": "Mohammad Abu Thaher Chowdhury",
+      "authors": "",
       "year": 2026,
-      "venue": "arXiv (astro-ph.CO)",
-      "url": "https://arxiv.org/abs/2606.19104v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.19104v1",
+      "venue": "Open Journal of Astrophysics",
+      "url": "https://arxiv.org/abs/2606.19104",
+      "pdf_url": "",
       "doi": "10.48550/ARXIV.2606.19104",
       "citations": 0,
       "source": [
-        "arxiv",
         "orcid"
       ]
     },
     {
-      "title": "Automated identification and subtraction of gravitational-wave glitches using boundary refinement",
-      "authors": "Mohammad Abu Thaher Chowdhury, Soumya D Mohanty",
+      "title": "Automated identification and subtraction of gravitational-wave glitches using boundary refinement: code and data",
+      "authors": "",
       "year": 2026,
-      "venue": "arXiv (gr-qc)",
-      "url": "https://arxiv.org/abs/2608.29295v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29295v1",
+      "venue": "Zenodo",
+      "url": "",
+      "pdf_url": "",
       "doi": "10.5281/zenodo.22165031",
       "citations": 0,
       "source": [
-        "arxiv",
         "orcid"
-      ]
-    },
-    {
-      "title": "Influence of Yttrium(Y) on properties of Lanthanum Cobalt Oxides",
-      "authors": "Mohammad Abu Thaher Chowdhury, Shumsun Naher Begum",
-      "year": 2024,
-      "venue": "arXiv (cond-mat.mtrl-sci)",
-      "url": "https://arxiv.org/abs/2408.15798v1",
-      "pdf_url": "https://arxiv.org/pdf/2408.15798v1",
-      "doi": "",
-      "citations": 0,
-      "source": [
-        "arxiv"
       ]
     },
     {
       "title": "Advancements in Glitch Subtraction Systems for Enhancing Gravitational Wave Data Analysis: A Brief Review",
-      "authors": "Mohammad Abu Thaher Chowdhury",
+      "authors": "",
       "year": 2024,
-      "venue": "arXiv (gr-qc)",
-      "url": "https://arxiv.org/abs/2406.01318v1",
-      "pdf_url": "https://arxiv.org/pdf/2406.01318v1",
+      "venue": "arXiv e-prints",
+      "url": "",
+      "pdf_url": "",
       "doi": "10.48550/arXiv.2406.01318",
       "citations": 0,
       "source": [
-        "arxiv",
         "orcid"
       ]
     },
