@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T09:35:34.032890Z",
+  "updated": "2026-10-26T09:42:41.914035Z",
   "publications": [
     {
       "title": "PHANTOM: Profile and Halo Analysis for Numerous Theoretical dark Matter Observables",
@@ -30,11 +30,11 @@
     },
     {
       "title": "Automated identification and subtraction of gravitational-wave glitches using boundary refinement",
-      "authors": "Mohammad Abu Thaher Chowdhury, Soumya D Mohanty",
+      "authors": "Mohammad Abu Thaher Chowdhury",
       "year": 2026,
       "venue": "arXiv (gr-qc)",
-      "url": "https://arxiv.org/abs/2608.29295v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29295v1",
+      "url": "https://arxiv.org/abs/2608.29295v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.29295v2",
       "doi": "10.5281/zenodo.22165031",
       "citations": 0,
       "source": [
